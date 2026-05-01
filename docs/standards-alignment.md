@@ -1,6 +1,6 @@
 # Standards alignment (non-normative)
 
-How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially §1.2, §1.9, §1.10 Acknowledgments). This repository additionally binds agents via [`.ai/policies/spec-file-human-authorization.md`](../.ai/policies/spec-file-human-authorization.md) (not part of the ACS standard).
+How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially Sections 3, 10, and informative Section 11). This repository additionally binds agents via [`.ai/policies/spec-file-human-authorization.md`](../.ai/policies/spec-file-human-authorization.md) (not part of the ACS standard).
 
 For a longer narrative on what is already a standard in this domain versus what ACS adds, see [standards-landscape.md](standards-landscape.md).
 
@@ -10,7 +10,7 @@ ACS **requires** a root `AGENTS.md` as the only root-level agent entry contract.
 
 ## Vendor neutrality (ACS-native)
 
-ACS **requires** (spec §1.5) that compliance **MUST NOT** depend on **vendor-specific agent artifacts** as defined there, and **absolutely forbids** certain repository paths (any `.copilot`, `.claude`, or `.cursor` file or directory in the version-controlled tree, and GitHub Copilot configuration under `.github/`—see spec §1.5 *Forbidden paths*). Optional product-specific files **MAY** exist only when **not** on that forbidden list; otherwise the normative rule is **sole dependence** for non-forbidden vendor artifacts. See [standards-landscape.md](standards-landscape.md) for how this relates to external standards.
+ACS **requires** (spec Section 6) that compliance **MUST NOT** depend on **vendor-specific agent artifacts** as defined there, and **absolutely forbids** certain repository paths (any `.copilot`, `.claude`, or `.cursor` file or directory in the version-controlled tree, and GitHub Copilot configuration under `.github/`—see Section 6.3 *Forbidden paths*). Optional product-specific files **MAY** exist only when **not** on that forbidden list; otherwise the normative rule is **sole dependence** for non-forbidden vendor artifacts. See [standards-landscape.md](standards-landscape.md) for how this relates to external standards.
 
 ## Model Context Protocol (tools / execution)
 
@@ -28,7 +28,7 @@ Live tools are registered in MCP host configuration. This repository’s **templ
 
 ## Agent Skills (repository-local skills)
 
-ACS **requires** ([spec](../spec/ACS-v0.1.md) §1.2) conformance with [Agent Skills](https://agentskills.io/). Per the [Agent Skills specification](https://agentskills.io/specification), a skill is a **directory** named after the skill id containing at least `SKILL.md` with YAML front matter (`name` and `description` required; `name` must match the directory). ACS places those packages under `.ai/skills/<skill-id>/`.
+ACS **requires** ([spec](../spec/ACS-v0.1.md) Section 3) conformance with [Agent Skills](https://agentskills.io/). Per the [Agent Skills specification](https://agentskills.io/specification), a skill is a **directory** named after the skill id containing at least `SKILL.md` with YAML front matter (`name` and `description` required; `name` must match the directory). ACS places those packages under `.ai/skills/<skill-id>/`.
 
 Validate skills with the upstream [skills-ref](https://github.com/agentskills/agentskills/tree/main/skills-ref) tool when iterating locally.
 

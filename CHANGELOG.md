@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 for the **standard document** version (see metadata in [spec/ACS-v0.1.md](spec/ACS-v0.1.md) and [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md)).
 
+## [0.1.13] - 2026-05-01
+
+### Changed
+
+- **Spec:** Restructured into **eleven top-level sections** (`## 1`–`## 11`): conformance, scope, external alignment, taxonomy, structure, invariants/vendor neutrality, contract definitions, resolution order, compliance, normative references, acknowledgments—**one document, one standard**, not a single umbrella “Section 1.” Cross-references, TOC anchors, and repo pointers updated (README links `#9-compliance`, `#10-normative-references`).
+
 ## [0.1.12] - 2026-05-01
 
 ### Changed

@@ -1,15 +1,10 @@
-# Templates and examples parity with §1
+# Templates and examples parity with the normative spec
 
 **ACS type:** Instruction
 
-## After any §1 layout or taxonomy change
+## After any normative layout or taxonomy change
 
-1. Update [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md) if this publication’s tree or example descriptions change.
-2. Update `templates/` so a new adopter still receives a valid minimal ACS tree.
-3. Update `examples/minimal/` and `examples/full/` per [docs/publisher-layout-and-templates.md](../../docs/publisher-layout-and-templates.md).
-4. Update root `.ai/` when this repo’s maintainer contract should reflect §1 changes.
-5. Extend `scripts/Verify-AcsRepo.ps1` **REQUIRED_FILES** or directory counts if the contract for *this* repo intentionally tightens.
-
-## Verification
-
-Run `pwsh ./scripts/Verify-AcsRepo.ps1` locally before pushing substantive layout changes.
+1. Diff `spec/ACS-v0.1.md` Sections 5–8 against `templates/`, both `examples/`, and [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md).
+2. Update diagrams, file trees, and prose so **templates** remain the smallest compliant starter and **examples** remain accurate illustrations.
+3. Run `pwsh ./scripts/Verify-AcsRepo.ps1` from the repository root; fix failures before merge.
+4. Update root `.ai/` when this repo’s maintainer contract should reflect spec changes.

@@ -9,8 +9,8 @@ Thank you for helping improve the Agent Contracts Standard (ACS) and this refere
 ## Before you start
 
 - Read [AGENTS.md](AGENTS.md) and [`.ai/index.md`](.ai/index.md) if you are changing normative text, templates, or examples.
-- Normative rules live in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) **§1** only (there is no §2 in the spec). `docs/`, `templates/`, and `examples/` are non-normative unless they duplicate §1.
-- External alignment (BCP 14, AGENTS.md, MCP, Agent Skills) is listed in spec **§1.9**; do not contradict those references without a deliberate version bump.
+- Normative rules live in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) **Sections 1 through 10** only (the full standard is that single file; there is no separate “part 2” in the spec). `docs/`, `templates/`, and `examples/` are non-normative unless they duplicate those sections.
+- External alignment (BCP 14, AGENTS.md, MCP, Agent Skills) is listed in spec **Section 10**; do not contradict those references without a deliberate version bump.
 
 ## Verification (strict)
 
@@ -20,7 +20,7 @@ From the repository root:
 pwsh ./scripts/Verify-AcsRepo.ps1
 ```
 
-This checks required paths, spec §1.5 *Forbidden paths* (no `.copilot`/`.claude`/`.cursor` in the tree outside `.git`; no GitHub Copilot paths under `.github/` as listed in the spec), `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` §1.7 heading order. CI runs the same PowerShell script on every push and pull request to `main`. Only `.ps1` and `.cs` tooling is used in `scripts/` (no Python or Bash).
+This checks required paths, spec Section 6.3 *Forbidden paths* (no `.copilot`/`.claude`/`.cursor` in the tree outside `.git`; no GitHub Copilot paths under `.github/` as listed in the spec), `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` Section 8 heading order. CI runs the same PowerShell script on every push and pull request to `main`. Only `.ps1` and `.cs` tooling is used in `scripts/` (no Python or Bash).
 
 ### Scaffold `templates/` into another folder
 
@@ -41,13 +41,13 @@ dotnet run --project scripts/SpawnAcsTemplate.csproj -- D:\path\to\target-repo
 1. **Open an issue** (or discuss in an existing one) for substantive spec changes so maintainers can agree on direction.
 2. **Fork** the repository and create a **branch** from `main` (for example `fix/spec-wording` or `feature/ci-verify`).
 3. **Keep changes focused**—one logical change per pull request when possible.
-4. **Update artifacts together** when §1 layout or paths change: `spec/ACS-v0.1.md`, `templates/`, `examples/`, root `.ai/` if applicable, and this file or `README.md` if discoverability changes.
+4. **Update artifacts together** when normative layout or paths in `spec/ACS-v0.1.md` change: the spec file, `templates/`, `examples/`, root `.ai/` if applicable, and this file or `README.md` if discoverability changes.
 5. **Add a [CHANGELOG.md](CHANGELOG.md)** entry under `[Unreleased]` or the next version section (see Keep a Changelog style already used in this repo).
 6. **Open a pull request** against `main` with a clear title and description. Link related issues.
 
 ## Pull request checklist
 
-- [ ] Normative (§1) edits are intentional and wording is consistent with **§1.0** (BCP 14 keywords in **bold**).
+- [ ] Normative edits to `spec/ACS-v0.1.md` are intentional and wording is consistent with **Section 1** (BCP 14 keywords in **bold**).
 - [ ] Templates and examples still match the spec diagrams where they claim to.
 - [ ] `CHANGELOG.md` updated if the change is user-visible.
 - [ ] No secrets, credentials, or private data in commits.

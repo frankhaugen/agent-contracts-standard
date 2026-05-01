@@ -12,8 +12,8 @@ Software repositories increasingly rely on automated agents for review, refactor
 - **One contract root:** Everything else lives under `.ai/`, so “agent behavior for this repo” is a subtree you can copy, lint, or archive as a unit.
 - **Clear taxonomy:** Instructions, policies, skills, commands, and context have different lifetimes and enforcement semantics. Naming those types avoids dumping everything into one markdown file.
 - **Portable skills:** Skills live under `.ai/skills/<skill-id>/` as [Agent Skills](https://agentskills.io/) packages (`SKILL.md` + optional assets) so the same skill can be validated and reused across compatible agents.
-- **Strict dogfood:** The reference repository can carry a full `.ai/` maintainer contract and automated checks (`scripts/Verify-AcsRepo.ps1`) so the standard’s publisher eats its own cooking at a higher bar than the §1.8 minimum alone.
-- **Spec vs publication:** The normative standard is **only** what appears in `spec/ACS-v0.1.md` §1; how this repo lays out `templates/`, `examples/`, and docs is **publisher material**, not part of the ACS text ([`docs/publisher-layout-and-templates.md`](publisher-layout-and-templates.md)).
+- **Strict dogfood:** The reference repository can carry a full `.ai/` maintainer contract and automated checks (`scripts/Verify-AcsRepo.ps1`) so the standard’s publisher eats its own cooking at a higher bar than the Section 9 minimum alone.
+- **Spec vs publication:** The normative standard is **only** what appears in `spec/ACS-v0.1.md` Sections 1–10; how this repo lays out `templates/`, `examples/`, and docs is **publisher material**, not part of the ACS text ([`docs/publisher-layout-and-templates.md`](publisher-layout-and-templates.md)).
 - **Vendor neutrality:** ACS does not require tool-specific filenames. Compliance is defined by structure and discoverability, not by a particular runtime.
 
 ## Discoverability

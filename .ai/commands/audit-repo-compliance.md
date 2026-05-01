@@ -7,7 +7,7 @@
 **Steps**
 
 1. Activate skill [acs-compliance-audit](../skills/acs-compliance-audit/SKILL.md) (run script + checklist).
-2. Confirm §1.5 *Invariants and vendor neutrality* in `spec/ACS-v0.1.md` against the tree: `AGENTS.md` only at root for ACS entry; ACS-classified contracts under `.ai/`; **Forbidden paths** absent (no `.copilot`/`.claude`/`.cursor` anywhere except under `.git`; under `.github/`: no `copilot-instructions.md`, `copilot/`, `instructions/`, or `prompts/` as in spec); no **required** sole reliance on other vendor-specific agent artifacts (§1.5 *Normative prohibitions*).
-3. Confirm §1.7 heading order in `.ai/index.md`.
+2. Confirm Section 6 *Invariants and vendor neutrality* in `spec/ACS-v0.1.md` against the tree: `AGENTS.md` only at root for ACS entry; ACS-classified contracts under `.ai/`; **Forbidden paths** absent (no `.copilot`/`.claude`/`.cursor` anywhere except under `.git`; under `.github/`: no `copilot-instructions.md`, `copilot/`, `instructions/`, or `prompts/` as in spec); no **required** sole reliance on other vendor-specific agent artifacts (Section 6.4).
+3. Confirm Section 8 heading order in `.ai/index.md` (Instructions → Policies → Skills → Commands → Context).
 
 **Output:** Written audit summary: automated results, manual notes, and follow-up issues if any.

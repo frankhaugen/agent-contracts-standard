@@ -6,14 +6,14 @@ Agent-facing context for maintaining the **Agent Contracts Standard (ACS)** refe
 
 | Path | Role |
 |------|------|
-| [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) | Normative standard (**§1 only**; no repository layout in the spec file) |
+| [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) | Normative standard (Sections 1–10; no publisher layout in the spec file) |
 | [`templates/`](templates/) | Copy-paste ACS starter for other repositories |
 | [`examples/`](examples/) | Minimal and full non-normative examples |
 | [`docs/`](docs/) | Rationale, standards-alignment, standards-landscape (informative) |
 | [`scripts/Verify-AcsRepo.ps1`](scripts/Verify-AcsRepo.ps1) | **Strict** self-verification for **this** repo |
 | [`.ai/`](.ai/index.md) | **Complete** agent contract for editing the standard (dogfood) |
 
-This repository **intends full ACS v0.1 compliance** for its own layout: root `AGENTS.md`, `.ai/index.md`, and all contract categories populated under `.ai/` per `spec/ACS-v0.1.md` §1.4–§1.7.
+This repository **intends full ACS v0.1 compliance** for its own layout: root `AGENTS.md`, `.ai/index.md`, and all contract categories populated under `.ai/` per `spec/ACS-v0.1.md` Sections 5–8.
 
 ## Build and test
 
@@ -26,7 +26,7 @@ Do not commit credentials or private URLs. For vulnerability reports, see [SECUR
 
 ## Agent contract (ACS)
 
-The **entire** machine-oriented contract for working **in this repo** lives under [`.ai/`](.ai/index.md). **Start there**, not only this file: resolution order is `AGENTS.md` → `.ai/index.md` → instructions → policies → skills → commands → context (`spec/ACS-v0.1.md` §1.7).
+The **entire** machine-oriented contract for working **in this repo** lives under [`.ai/`](.ai/index.md). **Start there**, not only this file: resolution order is `AGENTS.md` → `.ai/index.md` → instructions → policies → skills → commands → context (`spec/ACS-v0.1.md` Section 8).
 
 ### Required reads (minimum)
 
@@ -39,10 +39,10 @@ Then use **skills** for packaged workflows (normative edit, template sync, audit
 ## Rules
 
 - **Never** edit `spec/ACS-v0.1.md` without **explicit human maintainer instruction** recorded in an issue or PR — see [`.ai/policies/spec-file-human-authorization.md`](.ai/policies/spec-file-human-authorization.md).
-- Follow **instructions** before changing **§1** normative text; enforce **policies** at all times.
+- Follow **instructions** before changing normative text in `spec/ACS-v0.1.md`; enforce **policies** at all times.
 - Activate the **skill** that matches the task (see `.ai/index.md` § Skills).
 - Use **commands** for structured maintainer workflows (verify layout, audit compliance, version bump, PR normative review).
-- Do not introduce conventions that **contradict** `spec/ACS-v0.1.md` §1 without a deliberate version strategy and `CHANGELOG.md` entry.
+- Do not introduce conventions that **contradict** `spec/ACS-v0.1.md` without a deliberate version strategy and `CHANGELOG.md` entry.
 - Keep [AGENTS.md](https://agents.md/) and [Agent Skills](https://agentskills.io/specification) alignment for the root entry file and every `.ai/skills/<id>/SKILL.md` package.
 
 ## Community (humans)

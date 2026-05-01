@@ -1,6 +1,6 @@
 {
   "name": "example_tool",
-  "description": "Illustrative MCP tool descriptor shape referenced by ACS §1.2. Replace with real tool names and schemas from your MCP server.",
+  "description": "Illustrative MCP tool descriptor shape referenced by ACS Section 3. Replace with real tool names and schemas from your MCP server.",
   "input_schema": {
     "type": "object",
     "properties": {

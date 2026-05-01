@@ -1,8 +1,8 @@
-# Normative references maintenance (§1.9)
+# Normative references maintenance (Section 10)
 
 **ACS type:** Instruction
 
-## When to edit §1.9
+## When to edit Section 10
 
 - An upstream specification URI or title changes in a way readers rely on.
 - ACS adds a **new** incorporated standard or retires one (requires a **version bump** of ACS, not a silent edit).
@@ -14,4 +14,4 @@
 
 ## Cross-links
 
-When §1.9 changes, update `docs/standards-alignment.md` if it duplicates IDs or URIs, skim **§1.2** for consistent use of the same IDs, and refresh `docs/standards-landscape.md` if the narrative “what is already a standard” section is affected.
+When Section 10 changes, update `docs/standards-alignment.md` if it duplicates IDs or URIs, skim **Section 3** for consistent use of the same IDs, and refresh `docs/standards-landscape.md` if the narrative “what is already a standard” section is affected.

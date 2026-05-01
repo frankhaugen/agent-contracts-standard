@@ -1,6 +1,6 @@
 # Standards landscape (non-normative)
 
-How **Agent Contracts Standard (ACS) v0.1** sits among specifications that already exist in the “agents in repositories” space. Binding definitions, normative references, and short alignment tables are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially §1.2 and §1.9) and in [standards-alignment.md](standards-alignment.md). This note is **explanatory** only.
+How **Agent Contracts Standard (ACS) v0.1** sits among specifications that already exist in the “agents in repositories” space. Binding definitions, normative references, and short alignment tables are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially Sections 3 and 10) and in [standards-alignment.md](standards-alignment.md). This note is **explanatory** only.
 
 ---
 
@@ -21,9 +21,9 @@ Together, these are the parts of the domain that are **already** formal or commu
 
 ## Common practice that is not ACS-normative
 
-Many teams rely on **product- or editor-specific** files (rules, proprietary prompts, IDE-only paths). ACS v0.1 still **forbids** specific paths outright (for example any `.cursor`/`.copilot`/`.claude` path segment and GitHub Copilot instruction trees under `.github/`—see spec §1.5 *Forbidden paths*). For paths **not** so forbidden, ACS **does not** require vendor-specific filenames for compliance; see §1.5 and §1.8 for definitions, **Forbidden paths**, and dependence rules.
+Many teams rely on **product- or editor-specific** files (rules, proprietary prompts, IDE-only paths). ACS v0.1 still **forbids** specific paths outright (for example any `.cursor`/`.copilot`/`.claude` path segment and GitHub Copilot instruction trees under `.github/`—see spec Section 6.3 *Forbidden paths*). For paths **not** so forbidden, ACS **does not** require vendor-specific filenames for compliance; see Sections 6 and 9 for definitions, **Forbidden paths**, and dependence rules.
 
-Other initiatives (for example agent-to-agent protocols or registry formats) may mature into standards. **ACS v0.1** does not incorporate them by reference; its normative perimeter is the reference table in the spec §1.9.
+Other initiatives (for example agent-to-agent protocols or registry formats) may mature into standards. **ACS v0.1** does not incorporate them by reference; its normative perimeter is the reference table in the spec Section 10.
 
 ---
 
@@ -33,8 +33,8 @@ Where ACS is **new specification work** (narrow, on purpose) is mainly:
 
 - A **contract taxonomy** (entry, instruction, skill, command, policy, context, tool) with distinct roles.
 - A **required repository layout**: `AGENTS.md`, `.ai/index.md`, and the named folders under `.ai/`.
-- A **resolution order** (spec §1.7) for how to think about precedence across those types.
-- **Compliance** criteria (spec §1.8): structure, categorization, discoverability from `AGENTS.md`, satisfaction of §1.5 vendor neutrality (including **MUST NOT** require vendor-specific agent artifacts for compliance), and **MUST NOT** include §1.5 *Forbidden paths*.
+- A **resolution order** (spec Section 8) for how to think about precedence across those types.
+- **Compliance** criteria (spec Section 9): structure, categorization, discoverability from `AGENTS.md`, satisfaction of Section 6 vendor neutrality (including **MUST NOT** require vendor-specific agent artifacts for compliance), and **MUST NOT** include Section 6.3 *Forbidden paths*.
 
 In short: **ACS profiles AGENTS.md, MCP, and Agent Skills into one vendor-neutral tree** and standardizes **layout, taxonomy, and precedence**—concerns those upstream documents do not fully pin down for a single repository contract root.
 

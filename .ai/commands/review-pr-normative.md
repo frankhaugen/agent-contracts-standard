@@ -6,10 +6,10 @@
 
 **Steps**
 
-1. Classify files: `spec/` (§1 normative only), publisher `docs/` / `templates/` / `examples/`, governance, CI.
+1. Classify files: `spec/` (normative spec only), publisher `docs/` / `templates/` / `examples/`, governance, CI.
 2. If `spec/ACS-v0.1.md` changes: verify **explicit human maintainer authorization** per [spec-file-human-authorization.md](../policies/spec-file-human-authorization.md) (issue/PR link in PR body or commits).
-3. If §1 changes: require **bold** BCP 14 keywords, `CHANGELOG` entry, parity updates per [templates-examples-parity.md](../instructions/templates-examples-parity.md).
-4. If only docs: ensure no new unstated **MUST** language in `README.md` that belongs in §1.
+3. If the normative spec changes: require **bold** BCP 14 keywords, `CHANGELOG` entry, parity updates per [templates-examples-parity.md](../instructions/templates-examples-parity.md).
+4. If only docs: ensure no new unstated **MUST** language in `README.md` that belongs in the spec.
 5. Run or request `pwsh ./scripts/Verify-AcsRepo.ps1` (or CI) result.
 
 **Output:** Blocking vs non-blocking comments; explicit “normative impact: yes/no”.

@@ -20,4 +20,4 @@
 ## Context
 
 - [example.md](context/example.md)
-- [mcp-tool-contract.json](context/mcp-tool-contract.json) — documentation mirror of MCP tool JSON (§1.2)
+- [mcp-tool-contract.json](context/mcp-tool-contract.json) — documentation mirror of MCP tool JSON (spec Section 3)

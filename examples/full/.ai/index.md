@@ -1,6 +1,6 @@
 # AI Contract Index
 
-**Full** ACS v0.1 example. Per ACS §1.7, after this file the category order is: instructions, policies, skills, commands, context. Section headings below follow that order.
+**Full** ACS v0.1 example. Per ACS Section 8, after this file the category order is: instructions, policies, skills, commands, context. Section headings below follow that order.
 
 ## Instructions
 

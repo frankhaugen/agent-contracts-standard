@@ -4,17 +4,17 @@
 
 Checklist for **agent-contracts-standard** as an ACS v0.1 dogfood repository. Automated checks: `pwsh ./scripts/Verify-AcsRepo.ps1`.
 
-| # | Requirement (spec §) | Check |
+| # | Requirement (spec) | Check |
 |---|----------------------|--------|
-| 1 | §1.8 `AGENTS.md` at root | File exists |
-| 2 | §1.8 `.ai/index.md` | File exists |
-| 3 | §1.5 Discoverable from `AGENTS.md` | Link/citation to `.ai/index.md` |
-| 3b | §1.5 Vendor neutrality | No sole reliance on vendor-specific agent artifacts (see spec §1.5 *Normative prohibitions*) |
-| 3c | §1.5 Forbidden paths | No `.copilot`/`.claude`/`.cursor` anywhere in tree (except under `.git`); no `.github/copilot-instructions.md`, `.github/copilot/`, `.github/instructions/`, or `.github/prompts/` (`Verify-AcsRepo.ps1` enforces on this repo) |
-| 4 | §1.4 All contract directories used | `instructions/`, `policies/`, `skills/`, `commands/`, `context/` each have ≥1 artifact |
-| 5 | §1.6 Skills = Agent Skills packages | Each `.ai/skills/<id>/SKILL.md` has `name: <id>` |
-| 6 | §1.7 Index section order | Instructions → Policies → Skills → Commands → Context |
-| 7 | §1.2 External refs | §1.9 table matches §1.2 IDs |
+| 1 | Section 9 — `AGENTS.md` at root | File exists |
+| 2 | Section 9 — `.ai/index.md` | File exists |
+| 3 | Section 6 — Discoverable from `AGENTS.md` | Link/citation to `.ai/index.md` |
+| 3b | Section 6 — Vendor neutrality | No sole reliance on vendor-specific agent artifacts (see Section 6.4) |
+| 3c | Section 6.3 — Forbidden paths | No `.copilot`/`.claude`/`.cursor` anywhere in tree (except under `.git`); no `.github/copilot-instructions.md`, `.github/copilot/`, `.github/instructions/`, or `.github/prompts/` (`Verify-AcsRepo.ps1` enforces on this repo) |
+| 4 | Section 5 — All contract directories used | `instructions/`, `policies/`, `skills/`, `commands/`, `context/` each have ≥1 artifact |
+| 5 | Section 7 — Skills = Agent Skills packages | Each `.ai/skills/<id>/SKILL.md` has `name: <id>` |
+| 6 | Section 8 — Index section order | Instructions → Policies → Skills → Commands → Context |
+| 7 | Sections 3 / 10 — External refs | Section 10 table matches Section 3 IDs |
 | 8 | Governance | `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md` present |
 | 9 | Spec edit authorization | [spec-file-human-authorization.md](../policies/spec-file-human-authorization.md) present; agents trained not to edit `spec/` without maintainer issue/PR |
 

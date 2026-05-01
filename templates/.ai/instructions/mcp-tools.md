@@ -6,7 +6,7 @@ Executable **Tools** in ACS are not defined as Markdown files. They are declared
 
 ## Descriptor shape
 
-The fields ACS references match MCP (see normative §1.2 in `spec/ACS-v0.1.md`):
+The fields ACS references match MCP (see normative Section 3 in `spec/ACS-v0.1.md`):
 
 - `name` — stable tool identifier
 - `description` — when the tool applies

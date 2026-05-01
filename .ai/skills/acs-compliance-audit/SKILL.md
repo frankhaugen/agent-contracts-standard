@@ -10,7 +10,7 @@ license: MIT
 
 1. Run `pwsh ./scripts/Verify-AcsRepo.ps1` and capture output.
 2. Manually confirm `AGENTS.md` links to `.ai/index.md` and lists Required reads per entry contract.
-3. Walk `.ai/index.md`: every linked file exists; section order matches spec §1.7 (Instructions, Policies, Skills, Commands, Context).
+3. Walk `.ai/index.md`: every linked file exists; section order matches spec Section 8 (Instructions, Policies, Skills, Commands, Context).
 4. Open [compliance-checklist.md](../../context/compliance-checklist.md) and tick mentally each item; file issues for gaps.
 
 ## Output

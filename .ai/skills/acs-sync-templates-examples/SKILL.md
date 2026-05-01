@@ -1,6 +1,6 @@
 ---
 name: acs-sync-templates-examples
-description: Aligns templates/ and examples/ with spec ACS-v0.1 after layout or taxonomy changes. Use when publisher docs or §1.4–§1.7 paths change. Triggers on templates, examples, parity, or publisher-layout.
+description: Aligns templates/ and examples/ with spec ACS-v0.1 after layout or taxonomy changes. Use when publisher docs or Sections 5–8 paths change. Triggers on templates, examples, parity, or publisher-layout.
 license: MIT
 ---
 
@@ -12,7 +12,7 @@ Read [templates-examples-parity.md](../../instructions/templates-examples-parity
 
 ## Steps
 
-1. Diff `spec/ACS-v0.1.md` §1.4–§1.7 against `templates/`, both `examples/`, and [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md).
+1. Diff `spec/ACS-v0.1.md` Sections 5–8 against `templates/`, both `examples/`, and [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md).
 2. Update file trees, `AGENTS.md` samples, and `.ai/index.md` examples.
 3. Ensure every skill under `templates/` and `examples/full` uses **Agent Skills** packages (`SKILL.md`, `name` = directory).
 4. Run `pwsh ./scripts/Verify-AcsRepo.ps1`.
