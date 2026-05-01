@@ -12,6 +12,12 @@ agent-contracts-standard/
   LICENSE
   CHANGELOG.md
 
+  scripts/
+    Verify-AcsRepo.ps1
+    Spawn-AcsTemplate.ps1
+    SpawnAcsTemplate.cs
+    SpawnAcsTemplate.csproj
+
   spec/
     ACS-v0.1.md
 

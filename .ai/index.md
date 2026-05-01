@@ -39,7 +39,7 @@ Agent Skills packages ([**AGENT-SKILLS**](https://agentskills.io/specification))
 
 | Command | Purpose |
 |---------|---------|
-| [verify-layout.md](commands/verify-layout.md) | Run `scripts/verify_acs_repo.py` (+ CI) |
+| [verify-layout.md](commands/verify-layout.md) | Run `scripts/Verify-AcsRepo.ps1` (+ CI); spawn templates via `Spawn-AcsTemplate.ps1` / `SpawnAcsTemplate.csproj` |
 | [audit-repo-compliance.md](commands/audit-repo-compliance.md) | End-to-end audit procedure |
 | [prepare-version-bump.md](commands/prepare-version-bump.md) | Prepare new ACS version / migration |
 | [review-pr-normative.md](commands/review-pr-normative.md) | Classify PR normative impact |

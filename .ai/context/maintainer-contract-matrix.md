@@ -11,6 +11,6 @@ Quick map of **this** repository’s `.ai/` contracts for agents editing the sta
 | Skills | Packaged workflows | `acs-normative-edit`, `acs-sync-templates-examples`, `acs-compliance-audit`, `acs-agents-md-review`, `acs-skill-edits` |
 | Commands | Named procedures | `verify-layout`, `audit-repo-compliance`, `prepare-version-bump`, `review-pr-normative` |
 | Context | Checklists and matrices | `compliance-checklist.md`, this file, `mcp-tool-contract.json` |
-| Scripts (repo tooling) | Automated self-verification | `scripts/verify_acs_repo.py` (not an ACS contract type; supports compliance) |
+| Scripts (repo tooling) | Verify + template spawn | `scripts/Verify-AcsRepo.ps1`, `scripts/Spawn-AcsTemplate.ps1`, `scripts/SpawnAcsTemplate.cs` + `.csproj` (not ACS contract types) |
 
 **Resolution order** when loading contracts: `AGENTS.md` → `.ai/index.md` → instructions → policies → skills → commands → context (`spec/ACS-v0.1.md` §1.7).

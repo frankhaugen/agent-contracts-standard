@@ -11,4 +11,4 @@
 ## After the edit
 
 1. Update `CHANGELOG.md` when user-visible or compliance meaning changes.
-2. Run `python3 scripts/verify_acs_repo.py`.
+2. Run `pwsh ./scripts/Verify-AcsRepo.ps1`.

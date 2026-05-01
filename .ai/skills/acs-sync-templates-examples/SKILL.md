@@ -15,4 +15,4 @@ Read [templates-examples-parity.md](../../instructions/templates-examples-parity
 1. Diff `spec/ACS-v0.1.md` §1.4–§1.7 against `templates/`, both `examples/`, and [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md).
 2. Update file trees, `AGENTS.md` samples, and `.ai/index.md` examples.
 3. Ensure every skill under `templates/` and `examples/full` uses **Agent Skills** packages (`SKILL.md`, `name` = directory).
-4. Run `python3 scripts/verify_acs_repo.py`.
+4. Run `pwsh ./scripts/Verify-AcsRepo.ps1`.

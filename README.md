@@ -1,6 +1,6 @@
 # Agent Contracts Standard (ACS)
 
-This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent-facing contracts in a Git repository, plus templates and examples. It also follows ACS at the root: [AGENTS.md](AGENTS.md) and [`.ai/`](.ai/index.md), with **strict** maintainer contracts (instructions, policies, skills, commands, context) and [`scripts/verify_acs_repo.py`](scripts/verify_acs_repo.py) for self-verification.
+This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent-facing contracts in a Git repository, plus templates and examples. It also follows ACS at the root: [AGENTS.md](AGENTS.md) and [`.ai/`](.ai/index.md), with **strict** maintainer contracts (instructions, policies, skills, commands, context) and [`scripts/Verify-AcsRepo.ps1`](scripts/Verify-AcsRepo.ps1) for self-verification. Scripts in `scripts/` are **PowerShell (`.ps1`)** or **C#** only.
 
 - **Normative spec:** [spec/ACS-v0.1.md](spec/ACS-v0.1.md)
 - **Copy-paste starter:** [templates/](templates/)
@@ -38,6 +38,7 @@ Compliance checklist: [§1.8](spec/ACS-v0.1.md#18-compliance). **Normative refer
 | Adopt ACS in a new repo | Copy [templates/AGENTS.md](templates/AGENTS.md) and [templates/.ai/](templates/.ai/) into your project, then replace examples with real contracts. |
 | See the minimal example tree | [examples/minimal/](examples/minimal/) — described in [docs/publisher-layout-and-templates.md § Example minimum](docs/publisher-layout-and-templates.md#example-minimum). |
 | See every contract type populated | [examples/full/](examples/full/) |
+| Scaffold the template into a folder | `pwsh ./scripts/Spawn-AcsTemplate.ps1 -Destination <path>` or `dotnet run --project scripts/SpawnAcsTemplate.csproj -- <path>` |
 
 ## Versioning
 

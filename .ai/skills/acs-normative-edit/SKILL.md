@@ -18,7 +18,7 @@ Read [bcp14-requirement-keywords.md](../../instructions/bcp14-requirement-keywor
 2. Apply edits using **bold** BCP 14 keywords only for normative force in §1.
 3. Update **§1.9** if any normative reference ID or URI changes; keep §1.2 IDs in sync.
 4. Update `CHANGELOG.md` if compliance meaning changes.
-5. Run `python3 scripts/verify_acs_repo.py`.
+5. Run `pwsh ./scripts/Verify-AcsRepo.ps1`.
 
 ## Output
 

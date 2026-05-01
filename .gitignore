@@ -1,0 +1,3 @@
+# Build output for scripts/SpawnAcsTemplate.csproj
+scripts/bin/
+scripts/obj/

@@ -8,8 +8,8 @@
 2. Update `templates/` so a new adopter still receives a valid minimal ACS tree.
 3. Update `examples/minimal/` and `examples/full/` per [docs/publisher-layout-and-templates.md](../../docs/publisher-layout-and-templates.md).
 4. Update root `.ai/` when this repo’s maintainer contract should reflect §1 changes.
-5. Extend `scripts/verify_acs_repo.py` **REQUIRED_FILES** or directory counts if the contract for *this* repo intentionally tightens.
+5. Extend `scripts/Verify-AcsRepo.ps1` **REQUIRED_FILES** or directory counts if the contract for *this* repo intentionally tightens.
 
 ## Verification
 
-Run `python3 scripts/verify_acs_repo.py` locally before pushing substantive layout changes.
+Run `pwsh ./scripts/Verify-AcsRepo.ps1` locally before pushing substantive layout changes.

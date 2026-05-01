@@ -16,11 +16,25 @@ Thank you for helping improve the Agent Contracts Standard (ACS) and this refere
 
 From the repository root, with Python 3.9+:
 
-```bash
-python3 scripts/verify_acs_repo.py
+```powershell
+pwsh ./scripts/Verify-AcsRepo.ps1
 ```
 
-This checks required paths, `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` §1.7 heading order. CI runs the same script on every push and pull request to `main`.
+This checks required paths, `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` §1.7 heading order. CI runs the same PowerShell script on every push and pull request to `main`. Only `.ps1` and `.cs` tooling is used in `scripts/` (no Python or Bash).
+
+### Scaffold `templates/` into another folder
+
+PowerShell (from repository root):
+
+```powershell
+pwsh ./scripts/Spawn-AcsTemplate.ps1 -Destination D:\path\to\target-repo
+```
+
+C# (requires [.NET 8 SDK](https://dotnet.microsoft.com/download), from repository root):
+
+```powershell
+dotnet run --project scripts/SpawnAcsTemplate.csproj -- D:\path\to\target-repo
+```
 
 ## How to contribute
 

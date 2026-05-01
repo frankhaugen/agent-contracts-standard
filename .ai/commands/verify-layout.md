@@ -6,7 +6,7 @@
 
 **Steps**
 
-1. Run `python3 scripts/verify_acs_repo.py` from the repository root (requires Python 3.9+).
+1. Run `pwsh ./scripts/Verify-AcsRepo.ps1` from the repository root (requires PowerShell 7+).
 2. If the repository is clean, CI on GitHub runs the same checks on `push` and `pull_request`.
 
 **Output:** Script exit code 0 and the printed success line, or a list of concrete missing files and skill validation errors.

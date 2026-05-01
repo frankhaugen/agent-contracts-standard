@@ -10,14 +10,14 @@ Agent-facing context for maintaining the **Agent Contracts Standard (ACS)** refe
 | [`templates/`](templates/) | Copy-paste ACS starter for other repositories |
 | [`examples/`](examples/) | Minimal and full non-normative examples |
 | [`docs/`](docs/) | Rationale and standards-alignment (informative) |
-| [`scripts/verify_acs_repo.py`](scripts/verify_acs_repo.py) | **Strict** self-verification for **this** repo |
+| [`scripts/Verify-AcsRepo.ps1`](scripts/Verify-AcsRepo.ps1) | **Strict** self-verification for **this** repo |
 | [`.ai/`](.ai/index.md) | **Complete** agent contract for editing the standard (dogfood) |
 
 This repository **intends full ACS v0.1 compliance** for its own layout: root `AGENTS.md`, `.ai/index.md`, and all contract categories populated under `.ai/` per `spec/ACS-v0.1.md` §1.4–§1.7.
 
 ## Build and test
 
-- **No compiled product.** Validate with `python3 scripts/verify_acs_repo.py` from the repository root (Python 3.9+). The same checks run in [GitHub Actions](.github/workflows/ci.yml).
+- **No compiled product.** Validate with `pwsh ./scripts/Verify-AcsRepo.ps1` from the repository root (PowerShell 7+). The same checks run in [GitHub Actions](.github/workflows/ci.yml). To scaffold `templates/` elsewhere, use [`scripts/Spawn-AcsTemplate.ps1`](scripts/Spawn-AcsTemplate.ps1) or `dotnet run --project scripts/SpawnAcsTemplate.csproj -- <path>`.
 - Optional: Markdown link checkers or `skills-ref validate` on skill directories if installed locally.
 
 ## Security considerations

@@ -2,7 +2,7 @@
 
 **ACS type:** Context (read-only maintainer aid)
 
-Checklist for **agent-contracts-standard** as an ACS v0.1 dogfood repository. Automated checks: `python3 scripts/verify_acs_repo.py`.
+Checklist for **agent-contracts-standard** as an ACS v0.1 dogfood repository. Automated checks: `pwsh ./scripts/Verify-AcsRepo.ps1`.
 
 | # | Requirement (spec §) | Check |
 |---|----------------------|--------|

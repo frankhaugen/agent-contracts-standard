@@ -10,7 +10,7 @@ Illustrative repository for agents: a fictional service with tests, PR review fl
 
 ## Build and test
 
-```bash
+```text
 npm install
 npm run build
 npm test
