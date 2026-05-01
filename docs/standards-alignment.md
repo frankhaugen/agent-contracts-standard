@@ -22,7 +22,7 @@ Live tools are registered in MCP host configuration. This repository’s **templ
 
 ## Agent Skills (repository-local skills)
 
-ACS **recommends** alignment with [Agent Skills](https://agentskills.io/). Per the [Agent Skills specification](https://agentskills.io/specification), a skill is a **directory** named after the skill id containing at least `SKILL.md` with YAML front matter (`name` and `description` required; `name` must match the directory). ACS places those packages under `.ai/skills/<skill-id>/`.
+ACS **requires** ([spec](../spec/ACS-v0.1.md) §1.2) conformance with [Agent Skills](https://agentskills.io/). Per the [Agent Skills specification](https://agentskills.io/specification), a skill is a **directory** named after the skill id containing at least `SKILL.md` with YAML front matter (`name` and `description` required; `name` must match the directory). ACS places those packages under `.ai/skills/<skill-id>/`.
 
 Validate skills with the upstream [skills-ref](https://github.com/agentskills/agentskills/tree/main/skills-ref) tool when iterating locally.
 
@@ -32,4 +32,4 @@ Validate skills with the upstream [skills-ref](https://github.com/agentskills/ag
 |------------------|------------------|
 | AGENTS.md        | MUST — root entry; Markdown style per agents.md |
 | MCP tools        | MUST — shape and execution model; optional JSON mirror in `.ai/context/` |
-| Agent Skills     | SHOULD — `.ai/skills/<skill-id>/SKILL.md` package layout |
+| Agent Skills     | MUST — `.ai/skills/<skill-id>/SKILL.md` package per Agent Skills spec |

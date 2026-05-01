@@ -6,6 +6,10 @@ This document defines ACS v0.1. **Section 1** is normative. **Section 2** is non
 
 ## 1. Standard (Normative Specification)
 
+### 1.0 Conformance terminology
+
+The key words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) ([RFC 2119](https://www.rfc-editor.org/rfc/rfc2119.html) and [RFC 8174](https://www.rfc-editor.org/rfc/rfc8174.html)) when, and only when, they appear in bold (for example **MUST**). These words are normative: **SHOULD** means there can exist valid reasons to deviate, but that deviation should be understood and rare; it is not “optional” in the colloquial sense.
+
 ### 1.1 Scope
 
 **Defines:**
@@ -47,9 +51,9 @@ Tool contract (ACS does not redefine this):
 
 #### Skills
 
-- **SHOULD** align with [Agent Skills](https://agentskills.io/) ([specification](https://agentskills.io/specification)).
+- **MUST** conform to the [Agent Skills](https://agentskills.io/) [specification](https://agentskills.io/specification) for every skill package under `.ai/skills/` (directory layout, `SKILL.md` front matter, and naming rules).
 
-ACS defines repository-local placement under `.ai/skills/`; each skill **SHOULD** use the Agent Skills package layout (`SKILL.md` with YAML front matter, `name` matching the parent directory) so the same skill can be validated and reused across clients.
+ACS defines repository-local placement under `.ai/skills/<skill-id>/`; each such package **MUST** include `SKILL.md` with required YAML (`name`, `description`) and **MUST** satisfy Agent Skills constraints (including `name` matching the parent directory).
 
 ---
 
@@ -82,7 +86,7 @@ AGENTS.md
   context/
 ```
 
-Each skill under `skills/` **SHOULD** follow the Agent Skills directory convention (`SKILL.md` plus optional `scripts/`, `references/`, `assets/`).
+Each skill under `skills/` **MUST** follow the Agent Skills directory convention (`SKILL.md` plus optional `scripts/`, `references/`, and `assets/` only as defined by that specification).
 
 ---
 
@@ -115,7 +119,7 @@ Location: .ai/skills/<skill-id>/SKILL.md (and optional sibling files per Agent S
 Scope: task-level
 ```
 
-Reusable capability definition. **Agent Skills alignment:** `<skill-id>` is a directory name; `SKILL.md` contains required YAML front matter (`name`, `description`) per [Agent Skills](https://agentskills.io/specification); `name` must match the directory name. Optional `scripts/`, `references/`, and `assets/` subdirectories follow that specification.
+Reusable capability definition. **Agent Skills:** `<skill-id>` is a directory name; `SKILL.md` **MUST** contain the required YAML front matter (`name`, `description`) per [Agent Skills](https://agentskills.io/specification); `name` **MUST** match the directory name. Optional `scripts/`, `references/`, and `assets/` subdirectories **MUST** follow that specification when present.
 
 #### Command
 
