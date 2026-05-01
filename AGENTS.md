@@ -9,7 +9,7 @@ Agent-facing context for maintaining the **Agent Contracts Standard (ACS)** refe
 | [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) | Normative standard (**§1 only**; no repository layout in the spec file) |
 | [`templates/`](templates/) | Copy-paste ACS starter for other repositories |
 | [`examples/`](examples/) | Minimal and full non-normative examples |
-| [`docs/`](docs/) | Rationale and standards-alignment (informative) |
+| [`docs/`](docs/) | Rationale, standards-alignment, standards-landscape (informative) |
 | [`scripts/Verify-AcsRepo.ps1`](scripts/Verify-AcsRepo.ps1) | **Strict** self-verification for **this** repo |
 | [`.ai/`](.ai/index.md) | **Complete** agent contract for editing the standard (dogfood) |
 

@@ -31,3 +31,4 @@ This repository uses `.ai/` as the canonical agent contract (for example ACS v0.
 - Use skills when applicable (each skill is an [Agent Skills](https://agentskills.io/) package under `.ai/skills/<skill-id>/`)
 - Use commands for structured workflows
 - Do not introduce new conventions if defined in `.ai/`
+- Keep ACS-required agent material in `AGENTS.md` and under `.ai/`; do not satisfy the contract solely through editor- or vendor-specific rule paths (see your ACS spec §1.5 if you claim compliance)

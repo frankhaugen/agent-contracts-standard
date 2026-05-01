@@ -14,7 +14,7 @@ Thank you for helping improve the Agent Contracts Standard (ACS) and this refere
 
 ## Verification (strict)
 
-From the repository root, with Python 3.9+:
+From the repository root:
 
 ```powershell
 pwsh ./scripts/Verify-AcsRepo.ps1

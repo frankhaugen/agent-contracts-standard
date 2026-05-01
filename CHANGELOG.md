@@ -6,10 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 for the **standard document** version (see metadata in [spec/ACS-v0.1.md](spec/ACS-v0.1.md) and [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md)).
 
+## [0.1.10] - 2026-05-01
+
+### Changed
+
+- **Spec:** §1.5 now defines **vendor-specific agent artifacts**, states **MUST NOT** rules for compliance, and expands general invariants; §1.8 compliance list references §1.5 explicitly. §1.1 scope updated accordingly.
+
 ## [0.1.9] - 2026-05-01
 
 ### Added
 
+- [`docs/standards-landscape.md`](docs/standards-landscape.md): non-normative note on ACS versus existing domain standards (BCP 14, AGENTS.md, MCP, Agent Skills).
 - [`scripts/Verify-AcsRepo.ps1`](scripts/Verify-AcsRepo.ps1): strict checks (replaces Python).
 - [`scripts/Spawn-AcsTemplate.ps1`](scripts/Spawn-AcsTemplate.ps1) and [`scripts/SpawnAcsTemplate.csproj`](scripts/SpawnAcsTemplate.csproj) + [`scripts/SpawnAcsTemplate.cs`](scripts/SpawnAcsTemplate.cs): copy `templates/` to a destination path.
 - [`.gitignore`](.gitignore) for `scripts/bin/` and `scripts/obj/` (dotnet build output).

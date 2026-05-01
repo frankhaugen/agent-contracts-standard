@@ -2,9 +2,15 @@
 
 How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially §1.2, §1.9, §1.10 Acknowledgments). This repository additionally binds agents via [`.ai/policies/spec-file-human-authorization.md`](../.ai/policies/spec-file-human-authorization.md) (not part of the ACS standard).
 
+For a longer narrative on what is already a standard in this domain versus what ACS adds, see [standards-landscape.md](standards-landscape.md).
+
 ## AGENTS.md (entry contract)
 
 ACS **requires** a root `AGENTS.md` as the only root-level agent entry contract. That matches the [AGENTS.md](https://agents.md/) convention: Markdown at the repository root, written for coding agents (build and test commands, security, conventions). The AGENTS.md format does not mandate specific headings; ACS adds the requirement that agents can reach the full contract under `.ai/` from that file. This publication’s suggested `AGENTS.md` shape lives in [docs/publisher-layout-and-templates.md](publisher-layout-and-templates.md) and in [`templates/AGENTS.md`](../templates/AGENTS.md).
+
+## Vendor neutrality (ACS-native)
+
+ACS **requires** (spec §1.5) that compliance **MUST NOT** depend on **vendor-specific agent artifacts** as defined there. Optional product-specific files **MAY** exist; the normative rule is **sole dependence** and **required** paths for claiming compliance. See [standards-landscape.md](standards-landscape.md) for how this relates to external standards.
 
 ## Model Context Protocol (tools / execution)
 

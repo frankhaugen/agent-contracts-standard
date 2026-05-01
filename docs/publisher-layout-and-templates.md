@@ -71,6 +71,7 @@ agent-contracts-standard/
   docs/
     rationale.md
     standards-alignment.md
+    standards-landscape.md
     publisher-layout-and-templates.md
 ```
 

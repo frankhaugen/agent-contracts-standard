@@ -2,5 +2,5 @@
 
 **ACS type:** Policy
 
-1. `templates/` and `examples/` **MUST NOT** require vendor-specific filenames or proprietary config as a condition of describing **ACS compliance** (per §1.5: no vendor-specific agent files **required**).
+1. `templates/` and `examples/` **MUST NOT** require vendor-specific filenames or proprietary config as a condition of describing **ACS compliance** (per spec §1.5 *Vendor-specific artifacts* and *Normative prohibitions*).
 2. Optional mentions of tools (editors, CLIs) **MAY** appear in informative docs for ergonomics; they **MUST NOT** read as mandatory for ACS v0.1 compliance unless §1 explicitly says so.

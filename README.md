@@ -5,7 +5,7 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 - **Normative spec:** [spec/ACS-v0.1.md](spec/ACS-v0.1.md)
 - **Copy-paste starter:** [templates/](templates/)
 - **Worked layouts:** [examples/minimal/](examples/minimal/) and [examples/full/](examples/full/)
-- **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md), [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md) (how **this** repo ships spec + templates; not part of ACS)
+- **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md), [docs/standards-landscape.md](docs/standards-landscape.md) (ACS vs existing domain standards), [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md) (how **this** repo ships spec + templates; not part of ACS)
 - **Changes:** [CHANGELOG.md](CHANGELOG.md)
 
 ## Community
@@ -17,7 +17,7 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 
 ## What ACS defines
 
-ACS defines **contract taxonomy**, **required paths** under `.ai/`, **file roles**, and **resolution order**. It does **not** define runtimes, orchestration, or vendor-specific behavior. See §1.1 in the spec.
+ACS defines **contract taxonomy**, **required paths** under `.ai/`, **file roles**, **resolution order**, and **vendor neutrality** for repository contracts (§1.5). It does **not** define runtimes or orchestration. See §1.1 in the spec.
 
 ## Compliance (summary)
 
@@ -26,7 +26,7 @@ A repository is **ACS v0.1 compliant** if:
 - `AGENTS.md` exists at the repository root.
 - `.ai/index.md` exists.
 - Agent contracts live under `.ai/` and use the ACS taxonomy.
-- Behavior does not depend on vendor-specific agent files.
+- Vendor neutrality per spec §1.5 (no **required** dependence on vendor-specific agent artifacts; see spec for definition).
 - Everything is discoverable starting from `AGENTS.md`.
 
 Compliance checklist: [§1.8](spec/ACS-v0.1.md#18-compliance). **Normative references** (BCP 14, AGENTS.md, MCP, Agent Skills): [§1.9](spec/ACS-v0.1.md#19-normative-references).

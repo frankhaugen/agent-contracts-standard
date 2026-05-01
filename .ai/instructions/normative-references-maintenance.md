@@ -14,4 +14,4 @@
 
 ## Cross-links
 
-When §1.9 changes, update `docs/standards-alignment.md` if it duplicates IDs or URIs, and skim **§1.2** for consistent use of the same IDs.
+When §1.9 changes, update `docs/standards-alignment.md` if it duplicates IDs or URIs, skim **§1.2** for consistent use of the same IDs, and refresh `docs/standards-landscape.md` if the narrative “what is already a standard” section is affected.
