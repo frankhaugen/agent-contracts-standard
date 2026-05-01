@@ -1,0 +1,22 @@
+name: Specification change
+description: Change to normative ACS (spec §1) or §1.9 references
+labels:
+  - spec
+body:
+  - type: markdown
+    attributes:
+      value: "Normative text lives in spec/ACS-v0.1.md (section 1 and normative references in section 1.9)."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should change and why?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Sections and files (templates, examples) to update.
+    validations:
+      required: false

@@ -8,6 +8,12 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 - **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md)
 - **Changes:** [CHANGELOG.md](CHANGELOG.md)
 
+## Community
+
+- [Contributing](CONTRIBUTING.md) — branches, PRs, normative vs non-normative changes
+- [Security policy](SECURITY.md) — report vulnerabilities privately
+- [Code of conduct](CODE_OF_CONDUCT.md)
+
 ## What ACS defines
 
 ACS defines **contract taxonomy**, **required paths** under `.ai/`, **file roles**, and **resolution order**. It does **not** define runtimes, orchestration, or vendor-specific behavior. See §1.1 in the spec.

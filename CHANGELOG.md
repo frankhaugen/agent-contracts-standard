@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 for the **standard document** version (see [spec/ACS-v0.1.md](spec/ACS-v0.1.md) §2.5).
 
+## [0.1.5] - 2026-05-01
+
+### Added
+
+- Repository best practices: [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) (Contributor Covenant 2.1).
+- [.editorconfig](.editorconfig) and [.gitattributes](.gitattributes) for consistent text encoding and line endings.
+- [GitHub Actions](.github/workflows/ci.yml) workflow to verify required spec, template, and example paths exist.
+- [Issue forms](.github/ISSUE_TEMPLATE/) and [pull request template](.github/pull_request_template.md).
+- README **Community** section; spec §2.1 and §1.10 updated to mention these files.
+
 ## [0.1.4] - 2026-05-01
 
 ### Changed

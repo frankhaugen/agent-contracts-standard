@@ -13,7 +13,7 @@ There is no compiled product. Validate edits by re-reading affected paths for co
 
 ## Security considerations
 
-Do not commit credentials, private URLs, or unpublished embargoed content. Treat the repository as public.
+Do not commit credentials, private URLs, or unpublished embargoed content. Treat the repository as public. For vulnerability reports, see [SECURITY.md](SECURITY.md).
 
 ## Agent contract (ACS)
 

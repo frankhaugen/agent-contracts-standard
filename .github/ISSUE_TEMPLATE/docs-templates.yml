@@ -1,0 +1,22 @@
+name: Docs, templates, or examples
+description: Non-normative updates to README, docs/, templates/, examples/, or root .ai/
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should improve?
+    validations:
+      required: true
+  - type: checkboxes
+    id: area
+    attributes:
+      label: Area
+      options:
+        - label: README / CONTRIBUTING / SECURITY
+        - label: docs/
+        - label: templates/
+        - label: examples/
+        - label: Root .ai/

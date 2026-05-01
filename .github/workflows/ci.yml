@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required ACS reference files exist
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=0
+          require_file() {
+            if [[ ! -f "$1" ]]; then
+              echo "::error::Missing required file: $1"
+              missing=1
+            fi
+          }
+          require_file AGENTS.md
+          require_file spec/ACS-v0.1.md
+          require_file templates/AGENTS.md
+          require_file templates/.ai/index.md
+          require_file templates/.ai/skills/example-skill/SKILL.md
+          require_file examples/minimal/AGENTS.md
+          require_file examples/minimal/.ai/index.md
+          require_file examples/full/AGENTS.md
+          require_file examples/full/.ai/index.md
+          require_file examples/full/.ai/skills/write-tests/SKILL.md
+          if [[ "$missing" -ne 0 ]]; then
+            exit 1
+          fi
+          echo "Layout check passed."
