@@ -10,6 +10,7 @@ Checklist for **agent-contracts-standard** as an ACS v0.1 dogfood repository. Au
 | 2 | §1.8 `.ai/index.md` | File exists |
 | 3 | §1.5 Discoverable from `AGENTS.md` | Link/citation to `.ai/index.md` |
 | 3b | §1.5 Vendor neutrality | No sole reliance on vendor-specific agent artifacts (see spec §1.5 *Normative prohibitions*) |
+| 3c | §1.5 Forbidden paths | No `.copilot`/`.claude`/`.cursor` anywhere in tree (except under `.git`); no `.github/copilot-instructions.md`, `.github/copilot/`, `.github/instructions/`, or `.github/prompts/` (`Verify-AcsRepo.ps1` enforces on this repo) |
 | 4 | §1.4 All contract directories used | `instructions/`, `policies/`, `skills/`, `commands/`, `context/` each have ≥1 artifact |
 | 5 | §1.6 Skills = Agent Skills packages | Each `.ai/skills/<id>/SKILL.md` has `name: <id>` |
 | 6 | §1.7 Index section order | Instructions → Policies → Skills → Commands → Context |

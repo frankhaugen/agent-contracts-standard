@@ -64,6 +64,31 @@ foreach ($rel in $RequiredFiles) {
     }
 }
 
+# spec §1.5 Forbidden paths — absolute prohibition (version-controlled tree)
+$ForbiddenDotNames = @('.copilot', '.claude', '.cursor')
+foreach ($name in $ForbiddenDotNames) {
+    $hits = Get-ChildItem -LiteralPath $RepoRoot -Recurse -Force -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -eq $name -and $_.FullName -notmatch '[\\/]\.git[\\/]' }
+    foreach ($h in $hits) {
+        $rel = $h.FullName.Substring($RepoRoot.Length).TrimStart('\', '/')
+        [void]$Errors.Add("Forbidden name MUST NOT exist in tree (spec ACS §1.5 Forbidden paths): $rel")
+    }
+}
+
+$ForbiddenGithubRel = @(
+    '.github/copilot-instructions.md',
+    '.github/copilot',
+    '.github/instructions',
+    '.github/prompts'
+)
+foreach ($rel in $ForbiddenGithubRel) {
+    $normalized = $rel -replace '/', [IO.Path]::DirectorySeparatorChar
+    $p = Join-Path $RepoRoot $normalized
+    if (Test-Path -LiteralPath $p) {
+        [void]$Errors.Add("Forbidden path MUST NOT exist (spec ACS §1.5 Forbidden paths): $rel")
+    }
+}
+
 $agentsPath = Join-Path $RepoRoot 'AGENTS.md'
 $agents = Get-Content -LiteralPath $agentsPath -Raw -Encoding utf8
 if ($agents -notmatch '\.ai/index\.md') {

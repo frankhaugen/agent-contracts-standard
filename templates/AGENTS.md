@@ -32,3 +32,4 @@ This repository uses `.ai/` as the canonical agent contract (for example ACS v0.
 - Use commands for structured workflows
 - Do not introduce new conventions if defined in `.ai/`
 - Keep ACS-required agent material in `AGENTS.md` and under `.ai/`; do not satisfy the contract solely through editor- or vendor-specific rule paths (see your ACS spec §1.5 if you claim compliance)
+- Do **not** add paths forbidden by your ACS spec §1.5 *Forbidden paths* (for example any `.cursor`/`.copilot`/`.claude` path, `.github/copilot-instructions.md`, or `.github/instructions/`)

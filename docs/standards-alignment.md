@@ -10,7 +10,7 @@ ACS **requires** a root `AGENTS.md` as the only root-level agent entry contract.
 
 ## Vendor neutrality (ACS-native)
 
-ACS **requires** (spec §1.5) that compliance **MUST NOT** depend on **vendor-specific agent artifacts** as defined there. Optional product-specific files **MAY** exist; the normative rule is **sole dependence** and **required** paths for claiming compliance. See [standards-landscape.md](standards-landscape.md) for how this relates to external standards.
+ACS **requires** (spec §1.5) that compliance **MUST NOT** depend on **vendor-specific agent artifacts** as defined there, and **absolutely forbids** certain repository paths (any `.copilot`, `.claude`, or `.cursor` file or directory in the version-controlled tree, and GitHub Copilot configuration under `.github/`—see spec §1.5 *Forbidden paths*). Optional product-specific files **MAY** exist only when **not** on that forbidden list; otherwise the normative rule is **sole dependence** for non-forbidden vendor artifacts. See [standards-landscape.md](standards-landscape.md) for how this relates to external standards.
 
 ## Model Context Protocol (tools / execution)
 

@@ -119,7 +119,7 @@ The following **invariants** **MUST** hold for any repository claiming ACS v0.1 
 1. **Root entrypoint.** `AGENTS.md` at the repository root is the **only** root-level contract file **required** by ACS as the agent entry contract (§1.2, §1.4).
 2. **Complete subtree.** Every file whose **role** under ACS is instruction, policy, skill, command, or context (§1.3, §1.6) **MUST** lie under `.ai/` as prescribed by §1.4 and §1.6 (including **[AGENT-SKILLS]** constraints inside `.ai/skills/<skill-id>/`).
 3. **Discoverability.** All such material **MUST** be discoverable from `AGENTS.md` alone (by its content or by pointers that lead to `.ai/index.md` and then to the relevant `.ai/` locations).
-4. **Vendor neutrality.** The repository **MUST** satisfy the **Vendor-specific artifacts** and **Normative prohibitions** portions of §1.5.
+4. **Vendor neutrality.** The repository **MUST** satisfy the **Vendor-specific artifacts**, **Forbidden paths**, and **Normative prohibitions** portions of §1.5.
 
 #### Vendor-specific artifacts
 
@@ -128,13 +128,34 @@ For ACS, a **vendor-specific agent artifact** is a **file or directory path** in
 1. A **specific product, editor, hosting service, or proprietary agent platform** documents that path (or a class of paths uniquely tied to that product) as **the** or **primary** location from which **that product** loads repository-scoped agent instructions, rules, policies, skills, or equivalent behavioral contracts **when operating on this repository**.
 2. The path is **not** `AGENTS.md`; is **not** inside the `.ai/` tree as required by §1.4; and is **not** solely a path whose use is **mandated** by **[AGENTS-MD]**, **[AGENT-SKILLS]** (for content inside `.ai/skills/<skill-id>/`), or **[MCP-SPEC]**.
 
-*Informative notes:* Paths standardized by **[MCP-SPEC]** or **[AGENT-SKILLS]** are **not** vendor-specific **solely** because a vendor implements those standards. Optional product folders (for example editor metadata) that **do not** satisfy both bullets above are **not** vendor-specific agent artifacts under this definition. ACS regulates **dependence** for compliance, not whether optional vendor files exist.
+*Informative notes:* Paths standardized by **[MCP-SPEC]** or **[AGENT-SKILLS]** are **not** vendor-specific **solely** because a vendor implements those standards. Optional product-only files or directories that **do not** satisfy both bullets above and are **not** listed under **Forbidden paths** (below) are **not** vendor-specific agent artifacts under this definition. ACS regulates **dependence** for compliance and, separately, bans certain paths outright.
+
+#### Forbidden paths
+
+The following paths **MUST NOT** exist anywhere in the **version-controlled** repository tree (case-sensitive path components as shown). This is an **absolute** prohibition: compliance **MUST NOT** be claimed if any matching file or directory is present.
+
+**Proprietary agent configuration names** — a file or directory whose final path component is exactly one of the following **MUST NOT** exist at **any** depth under the repository root (version-controlled tree; VCS metadata directories such as `.git` **MAY** be ignored when checking):
+
+- `.copilot`
+- `.claude`
+- `.cursor`
+
+*Informative:* These names commonly denote proprietary coding-agent or editor configuration roots outside ACS.
+
+**GitHub Copilot infrastructure under `.github/`** — **MUST NOT** exist:
+
+- File `.github/copilot-instructions.md`
+- Directory `.github/copilot/` (any path under it)
+- Directory `.github/instructions/` (any path under it; used by GitHub Copilot for path-scoped `*.instructions.md` custom instructions)
+- Directory `.github/prompts/` (any path under it; used by GitHub Copilot repository prompt files)
+
+*Informative:* Other material under `.github/` (for example Actions workflows, issue templates, `CODEOWNERS`, Dependabot configuration) is **not** restricted by this subsection **unless** it is part of a forbidden path above.
 
 #### Normative prohibitions
 
 A repository **MUST NOT** treat any **vendor-specific agent artifact** as **required** to satisfy §1.4, to populate the taxonomy in §1.3, to discover contracts from `AGENTS.md`, to apply §1.7, or to claim **ACS v0.1 compliance** under §1.8.
 
-A repository **MAY** include vendor-specific agent artifacts for optional tooling or ergonomics. If such artifacts exist, they **MUST NOT** be the **sole** place where material required by ACS (entry contract, `.ai/index.md`, or any instruction, policy, skill, command, or context contract) actually lives. *Equivalently:* if every vendor-specific agent artifact were removed and the remaining tree did not **fully** expose the ACS-defined roles from `AGENTS.md` and `.ai/` alone, the repository **MUST NOT** be considered ACS v0.1 compliant.
+A repository **MAY** include vendor-specific agent artifacts for optional tooling or ergonomics **only** if they are **not** listed under **Forbidden paths** in this section. If such artifacts exist, they **MUST NOT** be the **sole** place where material required by ACS (entry contract, `.ai/index.md`, or any instruction, policy, skill, command, or context contract) actually lives. *Equivalently:* if every **non-forbidden** vendor-specific agent artifact were removed and the remaining tree did not **fully** expose the ACS-defined roles from `AGENTS.md` and `.ai/` alone, the repository **MUST NOT** be considered ACS v0.1 compliant.
 
 ---
 
@@ -217,7 +238,7 @@ A repository is **ACS v0.1 compliant** if **all** of the following hold:
 1. `AGENTS.md` exists at the repository root.
 2. `.ai/index.md` exists.
 3. Every ACS-classified contract (§1.3) is located under `.ai/` as required by §1.4 and §1.6 (with skills conforming to **[AGENT-SKILLS]**), except the root entry contract `AGENTS.md`.
-4. §1.5 (general invariants, definition of vendor-specific artifacts, and normative prohibitions) is satisfied.
+4. §1.5 (general invariants, definition of vendor-specific artifacts, **Forbidden paths**, and normative prohibitions) is satisfied.
 5. Contracts are categorized using the ACS taxonomy (§1.3).
 
 ---

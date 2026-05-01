@@ -20,7 +20,7 @@ From the repository root:
 pwsh ./scripts/Verify-AcsRepo.ps1
 ```
 
-This checks required paths, `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` §1.7 heading order. CI runs the same PowerShell script on every push and pull request to `main`. Only `.ps1` and `.cs` tooling is used in `scripts/` (no Python or Bash).
+This checks required paths, spec §1.5 *Forbidden paths* (no `.copilot`/`.claude`/`.cursor` in the tree outside `.git`; no GitHub Copilot paths under `.github/` as listed in the spec), `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` §1.7 heading order. CI runs the same PowerShell script on every push and pull request to `main`. Only `.ps1` and `.cs` tooling is used in `scripts/` (no Python or Bash).
 
 ### Scaffold `templates/` into another folder
 

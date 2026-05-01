@@ -21,7 +21,7 @@ Together, these are the parts of the domain that are **already** formal or commu
 
 ## Common practice that is not ACS-normative
 
-Many teams rely on **product- or editor-specific** files (rules, proprietary prompts, IDE-only paths). Those can be valuable within an ecosystem but are not the same class of artifact as MCP or Agent Skills. ACS **does not** require vendor-specific filenames for compliance; see §1.5 and §1.8 in the spec for the normative definition and prohibitions.
+Many teams rely on **product- or editor-specific** files (rules, proprietary prompts, IDE-only paths). ACS v0.1 still **forbids** specific paths outright (for example any `.cursor`/`.copilot`/`.claude` path segment and GitHub Copilot instruction trees under `.github/`—see spec §1.5 *Forbidden paths*). For paths **not** so forbidden, ACS **does not** require vendor-specific filenames for compliance; see §1.5 and §1.8 for definitions, **Forbidden paths**, and dependence rules.
 
 Other initiatives (for example agent-to-agent protocols or registry formats) may mature into standards. **ACS v0.1** does not incorporate them by reference; its normative perimeter is the reference table in the spec §1.9.
 
@@ -34,7 +34,7 @@ Where ACS is **new specification work** (narrow, on purpose) is mainly:
 - A **contract taxonomy** (entry, instruction, skill, command, policy, context, tool) with distinct roles.
 - A **required repository layout**: `AGENTS.md`, `.ai/index.md`, and the named folders under `.ai/`.
 - A **resolution order** (spec §1.7) for how to think about precedence across those types.
-- **Compliance** criteria (spec §1.8): structure, categorization, discoverability from `AGENTS.md`, and satisfaction of §1.5 vendor neutrality (including **MUST NOT** require vendor-specific agent artifacts for compliance).
+- **Compliance** criteria (spec §1.8): structure, categorization, discoverability from `AGENTS.md`, satisfaction of §1.5 vendor neutrality (including **MUST NOT** require vendor-specific agent artifacts for compliance), and **MUST NOT** include §1.5 *Forbidden paths*.
 
 In short: **ACS profiles AGENTS.md, MCP, and Agent Skills into one vendor-neutral tree** and standardizes **layout, taxonomy, and precedence**—concerns those upstream documents do not fully pin down for a single repository contract root.
 
