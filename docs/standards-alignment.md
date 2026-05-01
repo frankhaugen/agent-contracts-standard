@@ -2,7 +2,7 @@
 
 How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially Sections 3, 10, and informative Section 11). This repository additionally binds agents via [`.ai/policies/spec-file-human-authorization.md`](../.ai/policies/spec-file-human-authorization.md) (not part of the ACS standard).
 
-For a longer narrative on what is already a standard in this domain versus what ACS adds, see [standards-landscape.md](standards-landscape.md).
+For a longer narrative on what is already a standard in this domain versus what ACS adds, see [standards-landscape.md](standards-landscape.md). For practical coexistence with editors, Copilot paths, and CI, see [compatibility.md](compatibility.md).
 
 ## AGENTS.md (entry contract)
 

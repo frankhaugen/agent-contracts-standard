@@ -43,5 +43,6 @@ In short: **ACS profiles AGENTS.md, MCP, and Agent Skills into one vendor-neutra
 ## See also
 
 - [standards-alignment.md](standards-alignment.md) — compact “how ACS relates” summary.
+- [compatibility.md](compatibility.md) — how compatible ACS is with common tools and hosts.
 - [rationale.md](rationale.md) — why ACS exists and what it avoids.
 - [publisher-layout-and-templates.md](publisher-layout-and-templates.md) — how **this** repository ships spec, templates, and examples (not part of the ACS normative document).

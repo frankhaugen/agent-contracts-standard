@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 for the **standard document** version (see metadata in [spec/ACS-v0.1.md](spec/ACS-v0.1.md) and [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md)).
 
+## [0.1.14] - 2026-05-01
+
+### Added
+
+- [`docs/compatibility.md`](docs/compatibility.md): non-normative compatibility matrix (AGENTS.md, MCP, Agent Skills, `.github/`, forbidden paths, editors/CI).
+
 ## [0.1.13] - 2026-05-01
 
 ### Changed

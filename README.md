@@ -5,7 +5,7 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 - **Normative spec:** [spec/ACS-v0.1.md](spec/ACS-v0.1.md)
 - **Copy-paste starter:** [templates/](templates/)
 - **Worked layouts:** [examples/minimal/](examples/minimal/) and [examples/full/](examples/full/)
-- **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md), [docs/standards-landscape.md](docs/standards-landscape.md) (ACS vs existing domain standards), [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md) (how **this** repo ships spec + templates; not part of ACS)
+- **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md), [docs/standards-landscape.md](docs/standards-landscape.md) (ACS vs existing domain standards), [docs/compatibility.md](docs/compatibility.md) (coexistence with tools and hosts), [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md) (how **this** repo ships spec + templates; not part of ACS)
 - **Changes:** [CHANGELOG.md](CHANGELOG.md)
 
 ## Community
