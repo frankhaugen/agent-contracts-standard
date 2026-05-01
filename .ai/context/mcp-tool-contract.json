@@ -1,0 +1,13 @@
+{
+  "name": "document_tool_shape",
+  "description": "Normative MCP tool descriptor fields referenced by ACS §1.2 (documentation only in this repo).",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "note": {
+        "type": "string",
+        "description": "Optional note that this JSON is not a live MCP registration"
+      }
+    }
+  }
+}

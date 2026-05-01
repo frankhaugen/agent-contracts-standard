@@ -1,0 +1,14 @@
+{
+  "name": "search_issues",
+  "description": "Example MCP tool for issue search. Real tools are registered by your MCP server; this file documents expected shape only.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "q": {
+        "type": "string",
+        "description": "Search query"
+      }
+    },
+    "required": ["q"]
+  }
+}

@@ -47,9 +47,9 @@ Tool contract (ACS does not redefine this):
 
 #### Skills
 
-- **SHOULD** align with [Agent Skills](https://agentskills.io/).
+- **SHOULD** align with [Agent Skills](https://agentskills.io/) ([specification](https://agentskills.io/specification)).
 
-ACS defines repository-local representation only.
+ACS defines repository-local placement under `.ai/skills/`; each skill **SHOULD** use the Agent Skills package layout (`SKILL.md` with YAML front matter, `name` matching the parent directory) so the same skill can be validated and reused across clients.
 
 ---
 
@@ -75,10 +75,14 @@ AGENTS.md
   index.md
   instructions/
   skills/
+    <skill-id>/
+      SKILL.md
   commands/
   policies/
   context/
 ```
+
+Each skill under `skills/` **SHOULD** follow the Agent Skills directory convention (`SKILL.md` plus optional `scripts/`, `references/`, `assets/`).
 
 ---
 
@@ -107,11 +111,11 @@ Persistent behavioral rules.
 #### Skill
 
 ```text
-Location: .ai/skills/*.md
+Location: .ai/skills/<skill-id>/SKILL.md (and optional sibling files per Agent Skills)
 Scope: task-level
 ```
 
-Reusable capability definition.
+Reusable capability definition. **Agent Skills alignment:** `<skill-id>` is a directory name; `SKILL.md` contains required YAML front matter (`name`, `description`) per [Agent Skills](https://agentskills.io/specification); `name` must match the directory name. Optional `scripts/`, `references/`, and `assets/` subdirectories follow that specification.
 
 #### Command
 
@@ -147,7 +151,7 @@ Defined externally (MCP)
 Referenced within ACS
 ```
 
-Executable operation.
+Executable operation. Declare tools in MCP server configuration; reference them from instructions, context, or commands using stable tool names. The MCP tool descriptor shape is fixed in §1.2; repository-local JSON or tables may mirror it for documentation (see non-normative templates).
 
 ---
 
@@ -185,9 +189,24 @@ A repository is **ACS v0.1 compliant** if:
 
 ```text
 agent-contracts-standard/
+  AGENTS.md
   README.md
   LICENSE
   CHANGELOG.md
+
+  .ai/
+    index.md
+    instructions/
+      maintaining-the-spec.md
+    skills/
+      acs-skill-edits/
+        SKILL.md
+    commands/
+      verify-layout.md
+    policies/
+      spec-integrity.md
+    context/
+      mcp-tool-contract.json
 
   spec/
     ACS-v0.1.md
@@ -198,14 +217,17 @@ agent-contracts-standard/
       index.md
       instructions/
         example.md
+        mcp-tools.md
       skills/
-        example.md
+        example-skill/
+          SKILL.md
       commands/
         example.md
       policies/
         example.md
       context/
         example.md
+        mcp-tool-contract.json
 
   examples/
     minimal/
@@ -224,14 +246,17 @@ agent-contracts-standard/
         instructions/
           architecture.md
           testing.md
+          mcp-tools.md
         skills/
-          write-tests.md
+          write-tests/
+            SKILL.md
         commands/
           review-pr.md
         policies/
           generated-files.md
         context/
           repo-map.md
+          mcp-tool-contract.json
 
   docs/
     rationale.md
@@ -242,14 +267,34 @@ agent-contracts-standard/
 
 #### AGENTS.md (Entry Contract)
 
-Aligned with AGENTS.md:
+**Aligned with [AGENTS.md](https://agents.md/):** root-level Markdown, agent-focused sections (for example project overview, build and test commands, security considerations). There are no required headings in the AGENTS.md format; use whatever helps agents work in the repo.
+
+**Aligned with ACS:** include enough pointers that the full contract under `.ai/` is discoverable from this file alone.
+
+Recommended combined shape:
 
 ```md
-# Agent Instructions
+# [Project or repository name]
 
-This repository uses `.ai/` as the canonical agent contract.
+Brief agent-focused summary (one or two sentences).
 
-## Required Reads
+## Project overview
+
+Context agents need: tech stack, layout, where authoritative docs live.
+
+## Build and test
+
+Commands to install, build, lint, and test (or explicit “none” / “see CI”).
+
+## Security considerations
+
+Secrets handling, production access, data sensitivity.
+
+## Agent contract (ACS)
+
+This repository uses `.ai/` as the canonical agent contract. Start at `.ai/index.md` for every instruction, skill, command, policy, and context file.
+
+## Required reads
 
 1. `.ai/index.md`
 2. `.ai/instructions/`
@@ -259,7 +304,7 @@ This repository uses `.ai/` as the canonical agent contract.
 
 - Follow instructions before making changes
 - Enforce policies at all times
-- Use skills when applicable
+- Use skills when applicable (Agent Skills packages under `.ai/skills/<skill-id>/`)
 - Use commands for structured workflows
 - Do not introduce new conventions if defined in `.ai/`
 ```
@@ -309,14 +354,18 @@ AGENTS.md
     architecture.md
     testing.md
   skills/
-    write-tests.md
+    write-tests/
+      SKILL.md
   commands/
     review-pr.md
   policies/
     generated-files.md
   context/
     repo-map.md
+    mcp-tool-contract.json
 ```
+
+The `mcp-tool-contract.json` file is an optional **documentation mirror** of the MCP tool descriptor shape from §1.2; live tools are still defined in MCP configuration.
 
 ### 2.5 Versioning
 

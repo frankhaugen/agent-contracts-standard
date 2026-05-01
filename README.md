@@ -1,6 +1,6 @@
 # Agent Contracts Standard (ACS)
 
-This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent-facing contracts in a Git repository, plus templates and examples.
+This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent-facing contracts in a Git repository, plus templates and examples. It also follows ACS at the root: [AGENTS.md](AGENTS.md) and [`.ai/`](.ai/index.md).
 
 - **Normative spec:** [spec/ACS-v0.1.md](spec/ACS-v0.1.md)
 - **Copy-paste starter:** [templates/](templates/)
@@ -29,7 +29,7 @@ Full checklist: [spec/ACS-v0.1.md §1.8](spec/ACS-v0.1.md#18-compliance).
 | Goal | Where to start |
 |------|----------------|
 | Adopt ACS in a new repo | Copy [templates/AGENTS.md](templates/AGENTS.md) and [templates/.ai/](templates/.ai/) into your project, then replace examples with real contracts. |
-| See the smallest valid shape | [examples/minimal/](examples/minimal/) (includes empty `skills/`, `commands/`, and `context/` directories so the §1.4 tree exists in Git). |
+| See the §2.3 minimal reference tree | [examples/minimal/](examples/minimal/) — matches the non-normative layout in [spec/ACS-v0.1.md §2.3](spec/ACS-v0.1.md#23-example-minimum). |
 | See every contract type populated | [examples/full/](examples/full/) |
 
 ## Versioning

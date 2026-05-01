@@ -2,20 +2,22 @@
 
 ## Instructions
 
-- [example.md](instructions/example.md) — template for global persistent rules
+- [example.md](instructions/example.md)
+- [mcp-tools.md](instructions/mcp-tools.md)
 
 ## Skills
 
-- [example.md](skills/example.md) — template for reusable task-level capabilities
+- [example-skill/SKILL.md](skills/example-skill/SKILL.md) — [Agent Skills](https://agentskills.io/) package (`name` matches directory)
 
 ## Commands
 
-- [example.md](commands/example.md) — template for named workflows
+- [example.md](commands/example.md)
 
 ## Policies
 
-- [example.md](policies/example.md) — template for always-enforced constraints
+- [example.md](policies/example.md)
 
 ## Context
 
-- [example.md](context/example.md) — template for read-only structured data
+- [example.md](context/example.md)
+- [mcp-tool-contract.json](context/mcp-tool-contract.json) — documentation mirror of MCP tool JSON (§1.2)
