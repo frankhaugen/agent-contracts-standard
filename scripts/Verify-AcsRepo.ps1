@@ -71,7 +71,7 @@ foreach ($name in $ForbiddenDotNames) {
         Where-Object { $_.Name -eq $name -and $_.FullName -notmatch '[\\/]\.git[\\/]' }
     foreach ($h in $hits) {
         $rel = $h.FullName.Substring($RepoRoot.Length).TrimStart('\', '/')
-        [void]$Errors.Add("Forbidden name MUST NOT exist in tree (spec ACS §1.5 Forbidden paths): $rel")
+        [void]$Errors.Add("Forbidden name MUST NOT exist in tree (spec ACS Section 1.5.3): $rel")
     }
 }
 
@@ -85,14 +85,14 @@ foreach ($rel in $ForbiddenGithubRel) {
     $normalized = $rel -replace '/', [IO.Path]::DirectorySeparatorChar
     $p = Join-Path $RepoRoot $normalized
     if (Test-Path -LiteralPath $p) {
-        [void]$Errors.Add("Forbidden path MUST NOT exist (spec ACS §1.5 Forbidden paths): $rel")
+        [void]$Errors.Add("Forbidden path MUST NOT exist (spec ACS Section 1.5.3): $rel")
     }
 }
 
 $agentsPath = Join-Path $RepoRoot 'AGENTS.md'
 $agents = Get-Content -LiteralPath $agentsPath -Raw -Encoding utf8
 if ($agents -notmatch '\.ai/index\.md') {
-    [void]$Errors.Add('AGENTS.md MUST reference `.ai/index.md` for ACS discoverability (§1.5 / §1.8).')
+    [void]$Errors.Add('AGENTS.md MUST reference `.ai/index.md` for ACS discoverability (Section 1.5 / 1.8).')
 }
 
 $instDir = Join-Path $RepoRoot '.ai/instructions'
@@ -157,7 +157,7 @@ if ($positions -contains -1) {
 else {
     for ($i = 1; $i -lt $positions.Count; $i++) {
         if ($positions[$i] -le $positions[$i - 1]) {
-            [void]$Errors.Add('.ai/index.md section order MUST follow ACS §1.7: Instructions, Policies, Skills, Commands, Context.')
+            [void]$Errors.Add('.ai/index.md section order MUST follow ACS Section 1.7: Instructions, Policies, Skills, Commands, Context.')
             break
         }
     }

@@ -1,6 +1,6 @@
 # Publisher layout and templates (not part of ACS)
 
-**This document is not part of the Agent Contracts Standard.** It describes how **this publication** (`agent-contracts-standard`) ships the normative spec file alongside templates, examples, and supporting docs. ACS compliance for **other** repositories is defined **only** by `spec/ACS-v0.1.md` §1.
+**This document is not part of the Agent Contracts Standard.** It describes how **this publication** (`agent-contracts-standard`) ships the normative spec file alongside templates, examples, and supporting docs. ACS compliance for **other** repositories is defined **only** by `spec/ACS-v0.1.md` Section 1.
 
 ---
 
@@ -183,7 +183,7 @@ AGENTS.md
     mcp-tool-contract.json
 ```
 
-The `mcp-tool-contract.json` file is an optional **documentation mirror** of the MCP tool descriptor shape from the normative spec §1.2; live tools are still defined in MCP configuration.
+The `mcp-tool-contract.json` file is an optional **documentation mirror** of the MCP tool descriptor shape from the normative spec Section 1.2; live tools are still defined in MCP configuration.
 
 ---
 

@@ -17,7 +17,7 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 
 ## What ACS defines
 
-ACS defines **contract taxonomy**, **required paths** under `.ai/`, **file roles**, **resolution order**, and **vendor neutrality** for repository contracts (§1.5). It does **not** define runtimes or orchestration. See §1.1 in the spec.
+ACS defines **contract taxonomy**, **required paths** under `.ai/`, **file roles**, **resolution order**, and **vendor neutrality** for repository contracts (Section 1.5). It does **not** define runtimes or orchestration. See Section 1.1 in the spec.
 
 ## Compliance (summary)
 
@@ -26,10 +26,10 @@ A repository is **ACS v0.1 compliant** if:
 - `AGENTS.md` exists at the repository root.
 - `.ai/index.md` exists.
 - Agent contracts live under `.ai/` and use the ACS taxonomy.
-- Vendor neutrality per spec §1.5 (no **required** dependence on vendor-specific agent artifacts; **Forbidden paths** such as any `.cursor`/`.copilot`/`.claude` tree and GitHub Copilot paths under `.github/` **MUST NOT** exist—see spec).
+- Vendor neutrality per spec Section 1.5 (no **required** dependence on vendor-specific agent artifacts; **Forbidden paths** such as any `.cursor`/`.copilot`/`.claude` tree and GitHub Copilot paths under `.github/` **MUST NOT** exist—see spec).
 - Everything is discoverable starting from `AGENTS.md`.
 
-Compliance checklist: [§1.8](spec/ACS-v0.1.md#18-compliance). **Normative references** (BCP 14, AGENTS.md, MCP, Agent Skills): [§1.9](spec/ACS-v0.1.md#19-normative-references).
+Compliance checklist: [Section 1.8](spec/ACS-v0.1.md#18-compliance). **Normative references** (BCP 14, AGENTS.md, MCP, Agent Skills): [Section 1.9](spec/ACS-v0.1.md#19-normative-references).
 
 ## Using this repo
 
