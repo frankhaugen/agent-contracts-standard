@@ -5,7 +5,7 @@
 | Short name | ACS |
 | Version | 0.1 |
 | Document status | Published |
-| Canonical source | File `spec/ACS-v0.1.md` in the **agent-contracts-standard** repository (see project `README.md` for the public URL). |
+| Canonical source | Implementations distributing this specification **SHOULD** record a stable URI or equivalent provenance for this file; ACS does not require a particular hosting repository layout. |
 
 ## Copyright
 
@@ -17,7 +17,7 @@ The Agent Contracts Standard (ACS) defines a **vendor-neutral** repository layou
 
 ## Status of this document
 
-Material under the heading **“1. Standard (Normative Specification)”** is **normative** unless a subsection is explicitly labeled non-normative. Material under **“2. Repository Specification (Non-Normative Reference Implementation)”** is **informative** only: it illustrates one way to publish ACS and does not add requirements.
+The entire specification consists of **§1 Standard (Normative Specification)** below. There is **no** §2 in this document. Publisher-specific trees, sample repositories, template prose, and hosting layout **MUST NOT** appear in this file; they belong in separate **non-normative** material maintained outside the standard.
 
 ---
 
@@ -174,7 +174,7 @@ Defined externally (MCP)
 Referenced within ACS
 ```
 
-Executable operation. Declare tools in MCP server configuration; reference them from instructions, context, or commands using stable tool names. The minimal JSON field set cited in §1.2 is informative shorthand for **[MCP-SPEC]**; repository-local JSON or tables may mirror it for documentation only (see §2).
+Executable operation. Declare tools in MCP server configuration; reference them from instructions, context, or commands using stable tool names. The minimal JSON field set cited in §1.2 is informative shorthand for **[MCP-SPEC]**; repository-local JSON or tables **MAY** mirror it for documentation outside this specification.
 
 ---
 
@@ -222,180 +222,3 @@ The following references are **normative**: they are incorporated into ACS by ci
 ### 1.10 Acknowledgments
 
 ACS adopts **requirement notation** from the IETF through **[BCP14]** without restating RFC 2119 prose in full. The **AGENTS.md** name and practice are a **community convention** documented at **[AGENTS-MD]** (stewardship and history are described on that site). **Agent Skills** packaging rules are due to the **Agent Skills** open standard and community ([**AGENT-SKILLS**]). **MCP** is defined by the Model Context Protocol project ([**MCP-SPEC**]). ACS is independent work that **profiles** those specifications to a single repository layout; it does not speak for the cited organizations.
-
----
-
-## 2. Repository Specification (Non-Normative Reference Implementation)
-
-### 2.1 Repository Layout
-
-```text
-agent-contracts-standard/
-  README.md
-  LICENSE
-  CHANGELOG.md
-
-  spec/
-    ACS-v0.1.md
-
-  templates/
-    AGENTS.md
-    .ai/
-      index.md
-      instructions/
-        example.md
-        mcp-tools.md
-      skills/
-        example-skill/
-          SKILL.md
-      commands/
-        example.md
-      policies/
-        example.md
-      context/
-        example.md
-        mcp-tool-contract.json
-
-  examples/
-    minimal/
-      AGENTS.md
-      .ai/
-        index.md
-        instructions/
-          repository.md
-        policies/
-          safety.md
-
-    full/
-      AGENTS.md
-      .ai/
-        index.md
-        instructions/
-          architecture.md
-          testing.md
-          mcp-tools.md
-        skills/
-          write-tests/
-            SKILL.md
-        commands/
-          review-pr.md
-        policies/
-          generated-files.md
-        context/
-          repo-map.md
-          mcp-tool-contract.json
-
-  docs/
-    rationale.md
-    standards-alignment.md
-```
-
-### 2.2 Template Requirements
-
-#### AGENTS.md (Entry Contract)
-
-**Aligned with [AGENTS.md](https://agents.md/):** root-level Markdown, agent-focused sections (for example project overview, build and test commands, security considerations). There are no required headings in the AGENTS.md format; use whatever helps agents work in the repo.
-
-**Aligned with ACS:** include enough pointers that the full contract under `.ai/` is discoverable from this file alone.
-
-Recommended combined shape:
-
-```md
-# [Project or repository name]
-
-Brief agent-focused summary (one or two sentences).
-
-## Project overview
-
-Context agents need: tech stack, layout, where authoritative docs live.
-
-## Build and test
-
-Commands to install, build, lint, and test (or explicit “none” / “see CI”).
-
-## Security considerations
-
-Secrets handling, production access, data sensitivity.
-
-## Agent contract (ACS)
-
-This repository uses `.ai/` as the canonical agent contract. Start at `.ai/index.md` for every instruction, skill, command, policy, and context file.
-
-## Required reads
-
-1. `.ai/index.md`
-2. `.ai/instructions/`
-3. `.ai/policies/`
-
-## Rules
-
-- Follow instructions before making changes
-- Enforce policies at all times
-- Use skills when applicable (Agent Skills packages under `.ai/skills/<skill-id>/`)
-- Use commands for structured workflows
-- Do not introduce new conventions if defined in `.ai/`
-```
-
-#### .ai/index.md
-
-```md
-# AI Contract Index
-
-## Instructions
-<list>
-
-## Skills
-<list>
-
-## Commands
-<list>
-
-## Policies
-<list>
-
-## Context
-<list>
-```
-
-Replace `<list>` with links or bullet lists of files in each directory.
-
-### 2.3 Example Minimum
-
-```text
-AGENTS.md
-.ai/
-  index.md
-  instructions/
-    repository.md
-  policies/
-    safety.md
-```
-
-### 2.4 Example Full
-
-```text
-AGENTS.md
-.ai/
-  index.md
-  instructions/
-    architecture.md
-    testing.md
-  skills/
-    write-tests/
-      SKILL.md
-  commands/
-    review-pr.md
-  policies/
-    generated-files.md
-  context/
-    repo-map.md
-    mcp-tool-contract.json
-```
-
-The `mcp-tool-contract.json` file is an optional **documentation mirror** of the MCP tool descriptor shape from §1.2; live tools are still defined in MCP configuration.
-
-### 2.5 Versioning
-
-```text
-v0.1 = initial composition standard
-```

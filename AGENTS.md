@@ -6,7 +6,7 @@ Agent-facing context for maintaining the **Agent Contracts Standard (ACS)** refe
 
 | Path | Role |
 |------|------|
-| [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) | Normative standard (§1) + informative reference layout (§2) |
+| [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) | Normative standard (**§1 only**; no repository layout in the spec file) |
 | [`templates/`](templates/) | Copy-paste ACS starter for other repositories |
 | [`examples/`](examples/) | Minimal and full non-normative examples |
 | [`docs/`](docs/) | Rationale and standards-alignment (informative) |

@@ -1,6 +1,6 @@
 # Minimal example repository
 
-Tiny project used only to demonstrate the smallest ACS layout from `spec/ACS-v0.1.md` §2.3.
+Tiny project used only to demonstrate the smallest ACS layout described in [docs/publisher-layout-and-templates.md § Example minimum](../../docs/publisher-layout-and-templates.md#example-minimum).
 
 ## Project overview
 

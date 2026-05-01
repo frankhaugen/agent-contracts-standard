@@ -4,7 +4,7 @@ How ACS v0.1 relates to other specifications. Authoritative requirements, **norm
 
 ## AGENTS.md (entry contract)
 
-ACS **requires** a root `AGENTS.md` as the only root-level agent entry contract. That matches the [AGENTS.md](https://agents.md/) convention: Markdown at the repository root, written for coding agents (build and test commands, security, conventions). The AGENTS.md format does not mandate specific headings; ACS adds the requirement that agents can reach the full contract under `.ai/` from that file (see spec §2.2 for a recommended combined outline).
+ACS **requires** a root `AGENTS.md` as the only root-level agent entry contract. That matches the [AGENTS.md](https://agents.md/) convention: Markdown at the repository root, written for coding agents (build and test commands, security, conventions). The AGENTS.md format does not mandate specific headings; ACS adds the requirement that agents can reach the full contract under `.ai/` from that file. This publication’s suggested `AGENTS.md` shape lives in [docs/publisher-layout-and-templates.md](publisher-layout-and-templates.md) and in [`templates/AGENTS.md`](../templates/AGENTS.md).
 
 ## Model Context Protocol (tools / execution)
 

@@ -4,7 +4,16 @@ All notable changes to this repository will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
-for the **standard document** version (see [spec/ACS-v0.1.md](spec/ACS-v0.1.md) §2.5).
+for the **standard document** version (see metadata in [spec/ACS-v0.1.md](spec/ACS-v0.1.md) and [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md)).
+
+## [0.1.8] - 2026-05-01
+
+### Changed
+
+- **Spec:** Removed **§2** entirely from `spec/ACS-v0.1.md`. ACS is now **§1 only**; repository layout, template prose, and example trees are **not** part of the standard document.
+- **Docs:** Added [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md) holding former §2 material as **publisher-only** guidance for this repo.
+- **Metadata:** Canonical source row in the spec no longer names a specific hosting repository.
+- Updated cross-references across `README`, `CONTRIBUTING`, `.ai/`, `examples/minimal/`, and `docs/standards-alignment.md`.
 
 ## [0.1.7] - 2026-05-01
 

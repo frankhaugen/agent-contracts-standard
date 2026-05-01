@@ -8,7 +8,7 @@ Contract for the **agent-contracts-standard** repository. Section order follows 
 |------|---------|
 | [maintaining-the-spec.md](instructions/maintaining-the-spec.md) | Hub: normative vs informative, contribution pointer |
 | [bcp14-requirement-keywords.md](instructions/bcp14-requirement-keywords.md) | Bold **MUST** / **SHOULD** / **MAY** usage in §1 |
-| [normative-vs-informative.md](instructions/normative-vs-informative.md) | §1 vs §2 / docs / README boundaries |
+| [normative-vs-informative.md](instructions/normative-vs-informative.md) | §1 vs publisher `docs/` / templates / examples |
 | [normative-references-maintenance.md](instructions/normative-references-maintenance.md) | §1.9 reference table hygiene |
 | [templates-examples-parity.md](instructions/templates-examples-parity.md) | Keep templates & examples aligned with §1 |
 | [spec-change-gate.md](instructions/spec-change-gate.md) | Gate before editing `spec/ACS-v0.1.md` |

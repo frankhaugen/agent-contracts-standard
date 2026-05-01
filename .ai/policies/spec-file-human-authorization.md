@@ -6,7 +6,7 @@ This policy applies to **this repository** and binds humans and automated agents
 
 ## Rules
 
-1. **MUST NOT** modify `spec/ACS-v0.1.md` (any section, including §2 diagrams, front matter table, punctuation, or links) without **explicit written instruction from a human maintainer** recorded in durable project history: a GitHub **issue** (opened or commented by a maintainer), a **pull request** description or review comment from a maintainer, or another written record the project treats as authoritative.
+1. **MUST NOT** modify `spec/ACS-v0.1.md` (any part of §1, including front matter table, punctuation, or links) without **explicit written instruction from a human maintainer** recorded in durable project history: a GitHub **issue** (opened or commented by a maintainer), a **pull request** description or review comment from a maintainer, or another written record the project treats as authoritative.
 2. **MUST NOT** treat any of the following as authorization: casual conversation, implied consent, “obvious” improvements, prior agent messages in a chat session, or autonomous application of “repository best practices.”
 3. If a task appears to require changing the normative or informative text of `spec/ACS-v0.1.md` and **no** maintainer instruction exists, **MUST** stop and request written instruction before editing that file.
 4. **MUST** cite the authorizing issue or PR (number or link) in the commit message or PR that touches `spec/ACS-v0.1.md`.

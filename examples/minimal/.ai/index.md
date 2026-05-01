@@ -1,6 +1,6 @@
 # AI Contract Index
 
-Non-normative **minimal** layout per ACS §2.3 (only `instructions/` and `policies/`).
+Non-normative **minimal** layout per [docs/publisher-layout-and-templates.md § Example minimum](../../../docs/publisher-layout-and-templates.md#example-minimum) (only `instructions/` and `policies/`).
 
 ## Instructions
 

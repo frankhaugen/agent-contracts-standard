@@ -2,7 +2,7 @@
 
 **ACS type:** Instruction
 
-This repository is the **reference publication** for ACS v0.1. Treat **§1** of `spec/ACS-v0.1.md` as law for the standard; treat **§2** as illustrative layout that **must** stay consistent with §1 unless explicitly labeled otherwise.
+This repository is the **reference publication** for ACS v0.1. Treat **§1** of `spec/ACS-v0.1.md` as the **entire** standard text. Publisher layout, templates, and sample trees **MUST NOT** live in the spec file; they live in [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md), `templates/`, and `examples/` and **must** stay consistent with §1.
 
 **Hard gate:** Do **not** edit `spec/ACS-v0.1.md` without human maintainer authorization. Read [spec-file-human-authorization.md](../policies/spec-file-human-authorization.md) and [spec-change-gate.md](spec-change-gate.md) first.
 
@@ -13,9 +13,9 @@ This repository is the **reference publication** for ACS v0.1. Treat **§1** of 
 - **§1.9** tables are authoritative for identifiers (**BCP14**, **AGENTS-MD**, **MCP-SPEC**, **AGENT-SKILLS**). Do not invent alternate IDs without updating §1.2 and §1.9 together — see [normative-references-maintenance.md](normative-references-maintenance.md).
 - Never move normative requirements into `docs/` or `README.md` alone; if readers need a rule, it belongs in §1 or must clearly defer to §1 — see [normative-vs-informative.md](normative-vs-informative.md).
 
-## Non-normative (§2) and templates
+## Publisher material and templates
 
-- Any change to required paths, skill packaging, or resolution order in §1 **MUST** be reflected in `templates/`, `examples/`, root `.ai/`, and CI verification in the same change set when practical — see [templates-examples-parity.md](templates-examples-parity.md).
+- Any change to required paths, skill packaging, or resolution order in §1 **MUST** be reflected in `docs/publisher-layout-and-templates.md` (if it documents this repo), `templates/`, `examples/`, root `.ai/`, and CI verification in the same change set when practical — see [templates-examples-parity.md](templates-examples-parity.md).
 
 ## Contribution process
 

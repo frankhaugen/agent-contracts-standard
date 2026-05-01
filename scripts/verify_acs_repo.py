@@ -19,6 +19,7 @@ REQUIRED_FILES = [
     "CONTRIBUTING.md",
     "SECURITY.md",
     "spec/ACS-v0.1.md",
+    "docs/publisher-layout-and-templates.md",
     ".ai/index.md",
     ".ai/instructions/maintaining-the-spec.md",
     ".ai/instructions/bcp14-requirement-keywords.md",

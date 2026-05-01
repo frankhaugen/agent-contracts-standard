@@ -5,7 +5,7 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 - **Normative spec:** [spec/ACS-v0.1.md](spec/ACS-v0.1.md)
 - **Copy-paste starter:** [templates/](templates/)
 - **Worked layouts:** [examples/minimal/](examples/minimal/) and [examples/full/](examples/full/)
-- **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md)
+- **Background:** [docs/rationale.md](docs/rationale.md), [docs/standards-alignment.md](docs/standards-alignment.md), [docs/publisher-layout-and-templates.md](docs/publisher-layout-and-templates.md) (how **this** repo ships spec + templates; not part of ACS)
 - **Changes:** [CHANGELOG.md](CHANGELOG.md)
 
 ## Community
@@ -36,12 +36,12 @@ Compliance checklist: [§1.8](spec/ACS-v0.1.md#18-compliance). **Normative refer
 | Goal | Where to start |
 |------|----------------|
 | Adopt ACS in a new repo | Copy [templates/AGENTS.md](templates/AGENTS.md) and [templates/.ai/](templates/.ai/) into your project, then replace examples with real contracts. |
-| See the §2.3 minimal reference tree | [examples/minimal/](examples/minimal/) — matches the non-normative layout in [spec/ACS-v0.1.md §2.3](spec/ACS-v0.1.md#23-example-minimum). |
+| See the minimal example tree | [examples/minimal/](examples/minimal/) — described in [docs/publisher-layout-and-templates.md § Example minimum](docs/publisher-layout-and-templates.md#example-minimum). |
 | See every contract type populated | [examples/full/](examples/full/) |
 
 ## Versioning
 
-**v0.1** is the initial composition standard. See spec §2.5.
+**v0.1** is the initial composition standard. See the version field in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) metadata and [docs/publisher-layout-and-templates.md § Document version identifier](docs/publisher-layout-and-templates.md#document-version-identifier-this-publication).
 
 ## License
 

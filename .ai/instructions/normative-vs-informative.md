@@ -4,8 +4,8 @@
 
 | Layer | Location | Force |
 |-------|-----------|--------|
-| Normative | `spec/ACS-v0.1.md` §1 (and §1.9 references) | Defines ACS compliance |
-| Informative | `spec/ACS-v0.1.md` §2, `docs/`, `README.md`, `templates/`, `examples/` | Illustration and onboarding only |
+| Normative | `spec/ACS-v0.1.md` (§1 through §1.10 only; there is no §2) | Defines ACS compliance |
+| Informative | `docs/`, `README.md`, `templates/`, `examples/` (and other publisher material **outside** the spec file) | Illustration and onboarding only |
 
 ## Rules
 

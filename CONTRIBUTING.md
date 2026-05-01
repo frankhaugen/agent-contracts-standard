@@ -9,7 +9,7 @@ Thank you for helping improve the Agent Contracts Standard (ACS) and this refere
 ## Before you start
 
 - Read [AGENTS.md](AGENTS.md) and [`.ai/index.md`](.ai/index.md) if you are changing normative text, templates, or examples.
-- Normative rules live in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) **§1**; **§2** and `docs/` are informative unless they duplicate §1.
+- Normative rules live in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) **§1** only (there is no §2 in the spec). `docs/`, `templates/`, and `examples/` are non-normative unless they duplicate §1.
 - External alignment (BCP 14, AGENTS.md, MCP, Agent Skills) is listed in spec **§1.9**; do not contradict those references without a deliberate version bump.
 
 ## Verification (strict)

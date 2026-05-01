@@ -4,10 +4,10 @@
 
 ## After any §1 layout or taxonomy change
 
-1. Update `spec/ACS-v0.1.md` **§2.1** tree diagrams if they describe this repository.
+1. Update [`docs/publisher-layout-and-templates.md`](../../docs/publisher-layout-and-templates.md) if this publication’s tree or example descriptions change.
 2. Update `templates/` so a new adopter still receives a valid minimal ACS tree.
-3. Update `examples/minimal/` and `examples/full/` per their stated roles (§2.3 / §2.4).
-4. Update root `.ai/` if this repo’s dogfood layout is cited in §2.1.
+3. Update `examples/minimal/` and `examples/full/` per [docs/publisher-layout-and-templates.md](../../docs/publisher-layout-and-templates.md).
+4. Update root `.ai/` when this repo’s maintainer contract should reflect §1 changes.
 5. Extend `scripts/verify_acs_repo.py` **REQUIRED_FILES** or directory counts if the contract for *this* repo intentionally tightens.
 
 ## Verification
