@@ -10,6 +10,8 @@
 
 ## Checklist
 
+- [ ] `python3 scripts/verify_acs_repo.py` passes locally (or CI green)
 - [ ] `CHANGELOG.md` updated if the change is user-visible
 - [ ] Templates/examples still match spec where applicable
+- [ ] New `.ai/` contracts added to `.ai/index.md` (policy)
 - [ ] No secrets or credentials added

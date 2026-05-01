@@ -1,6 +1,6 @@
 # Agent Contracts Standard (ACS)
 
-This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent-facing contracts in a Git repository, plus templates and examples. It also follows ACS at the root: [AGENTS.md](AGENTS.md) and [`.ai/`](.ai/index.md).
+This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent-facing contracts in a Git repository, plus templates and examples. It also follows ACS at the root: [AGENTS.md](AGENTS.md) and [`.ai/`](.ai/index.md), with **strict** maintainer contracts (instructions, policies, skills, commands, context) and [`scripts/verify_acs_repo.py`](scripts/verify_acs_repo.py) for self-verification.
 
 - **Normative spec:** [spec/ACS-v0.1.md](spec/ACS-v0.1.md)
 - **Copy-paste starter:** [templates/](templates/)

@@ -1,13 +1,12 @@
-# Command: verify ACS layout
+# Command: verify layout
 
 **ACS type:** Command
 
-**Invocation:** Maintainer asks to verify templates and examples match the spec tree.
+**Invocation:** Maintainer asks to verify repository layout, or before opening a PR that touches paths under `templates/`, `examples/`, or `.ai/`.
 
-**Steps:**
+**Steps**
 
-1. Open `spec/ACS-v0.1.md` §1.4 and §2.1 / §2.3 / §2.4.
-2. Compare `templates/` and `examples/minimal/` and `examples/full/` paths.
-3. Report mismatches (missing files, wrong skill layout, stale `AGENTS.md`).
+1. Run `python3 scripts/verify_acs_repo.py` from the repository root (requires Python 3.9+).
+2. If the repository is clean, CI on GitHub runs the same checks on `push` and `pull_request`.
 
-**Output:** A short checklist of matches and gaps.
+**Output:** Script exit code 0 and the printed success line, or a list of concrete missing files and skill validation errors.

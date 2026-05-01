@@ -1,34 +1,49 @@
 # agent-contracts-standard
 
-Agent-facing context for maintaining the **Agent Contracts Standard (ACS)** reference repository and its templates, examples, and normative spec.
+Agent-facing context for maintaining the **Agent Contracts Standard (ACS)** reference repository: normative spec, templates, examples, strict self-verification, and governance.
 
 ## Project overview
 
-- **Purpose:** Publish ACS v0.1: normative rules in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md), copy-paste material in [`templates/`](templates/), worked trees in [`examples/`](examples/), and background in [`docs/`](docs/).
-- **Audience:** Humans read [`README.md`](README.md); coding agents should read this file and then `.ai/`.
+| Path | Role |
+|------|------|
+| [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) | Normative standard (§1) + informative reference layout (§2) |
+| [`templates/`](templates/) | Copy-paste ACS starter for other repositories |
+| [`examples/`](examples/) | Minimal and full non-normative examples |
+| [`docs/`](docs/) | Rationale and standards-alignment (informative) |
+| [`scripts/verify_acs_repo.py`](scripts/verify_acs_repo.py) | **Strict** self-verification for **this** repo |
+| [`.ai/`](.ai/index.md) | **Complete** agent contract for editing the standard (dogfood) |
+
+This repository **intends full ACS v0.1 compliance** for its own layout: root `AGENTS.md`, `.ai/index.md`, and all contract categories populated under `.ai/` per `spec/ACS-v0.1.md` §1.4–§1.7.
 
 ## Build and test
 
-There is no compiled product. Validate edits by re-reading affected paths for consistency with the normative spec (§1). Optional: run a Markdown link checker if you have one configured locally.
+- **No compiled product.** Validate with `python3 scripts/verify_acs_repo.py` from the repository root (Python 3.9+). The same checks run in [GitHub Actions](.github/workflows/ci.yml).
+- Optional: Markdown link checkers or `skills-ref validate` on skill directories if installed locally.
 
 ## Security considerations
 
-Do not commit credentials, private URLs, or unpublished embargoed content. Treat the repository as public. For vulnerability reports, see [SECURITY.md](SECURITY.md).
+Do not commit credentials or private URLs. For vulnerability reports, see [SECURITY.md](SECURITY.md).
 
 ## Agent contract (ACS)
 
-This repository dogfoods ACS: the full contract lives under [`.ai/`](.ai/index.md). Start at `.ai/index.md` for instructions, policies, skills, commands, and context.
+The **entire** machine-oriented contract for working **in this repo** lives under [`.ai/`](.ai/index.md). **Start there**, not only this file: resolution order is `AGENTS.md` → `.ai/index.md` → instructions → policies → skills → commands → context (`spec/ACS-v0.1.md` §1.7).
 
-## Required reads
+### Required reads (minimum)
 
-1. `.ai/index.md`
-2. `.ai/instructions/`
-3. `.ai/policies/`
+1. [`.ai/index.md`](.ai/index.md) — canonical index of all contracts below.
+2. **All** of [`.ai/instructions/`](.ai/instructions/) — editorial and structural rules for the standard.
+3. **All** of [`.ai/policies/`](.ai/policies/) — hard constraints for this publication.
+
+Then use **skills** for packaged workflows (normative edit, template sync, audit, `AGENTS.md` review, skill packaging), **commands** for named procedures (verify, audit, version bump, PR review), and **context** for checklists and the MCP tool-shape mirror.
 
 ## Rules
 
-- Follow `.ai/instructions/` before changing normative spec text (§1).
-- Enforce `.ai/policies/` at all times.
-- Use `.ai/skills/` when a task matches a packaged skill.
-- Use `.ai/commands/` for named workflows when applicable.
-- Keep [AGENTS.md](https://agents.md/) and [Agent Skills](https://agentskills.io/) alignment when editing entry files or `SKILL.md` packages.
+- Follow **instructions** before changing **§1** normative text; enforce **policies** at all times.
+- Activate the **skill** that matches the task (see `.ai/index.md` § Skills).
+- Use **commands** for structured maintainer workflows (verify layout, audit compliance, version bump, PR normative review).
+- Do not introduce conventions that **contradict** `spec/ACS-v0.1.md` §1 without a deliberate version strategy and `CHANGELOG.md` entry.
+- Keep [AGENTS.md](https://agents.md/) and [Agent Skills](https://agentskills.io/specification) alignment for the root entry file and every `.ai/skills/<id>/SKILL.md` package.
+
+## Community (humans)
+
+[CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [README.md](README.md) for contributors and project overview.

@@ -1,11 +1,14 @@
 ---
 name: acs-skill-edits
-description: Edits or adds Agent Skills under .ai/skills/ in this repository. Use when changing SKILL.md files, skill directory names, or Agent Skills front matter for ACS examples and templates. Triggers on skills, SKILL.md, agentskills, or example-skill.
+description: Creates or edits Agent Skills packages under .ai/skills/, templates/.ai/skills/, or examples. Validates directory name, SKILL.md front matter, and index links. Use for skill structure or YAML fixes. Triggers on SKILL.md, skill package, agentskills, or new skill directory.
 license: MIT
 ---
 
-# ACS skill and template edits
+# ACS skill package edits
 
-1. Read [Agent Skills specification](https://agentskills.io/specification): `name` must match the parent directory; validate `description` length and content.
-2. Keep `examples/full` and `templates` consistent with normative §1.6 Skill in `spec/ACS-v0.1.md`.
-3. Update `.ai/index.md` files that link to the skill path.
+1. Conform to **[AGENT-SKILLS]** (`spec/ACS-v0.1.md` §1.9): `name` **MUST** match parent directory; `description` 1–1024 chars with trigger keywords.
+2. Prefer **narrow** skills (`acs-normative-edit`, `acs-sync-templates-examples`, …) over one oversized skill; add a new directory when scope is distinct.
+3. Update every `.ai/index.md` that should list the skill (root, templates if applicable).
+4. Run `python3 scripts/verify_acs_repo.py`.
+
+For normative §1 edits use [acs-normative-edit](../acs-normative-edit/SKILL.md); for template/example sync use [acs-sync-templates-examples](../acs-sync-templates-examples/SKILL.md).

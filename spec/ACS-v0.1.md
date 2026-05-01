@@ -223,7 +223,7 @@ The following references are **normative**: they are incorporated into ACS by ci
 
 | ID | Reference | Notes |
 |----|-----------|--------|
-| **ACS-REPO** | *agent-contracts-standard* repository: `README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `docs/rationale.md`, `docs/standards-alignment.md`, `templates/`, `examples/`, `.github/`. | Non-normative guidance and illustrations. |
+| **ACS-REPO** | *agent-contracts-standard* repository: `README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `docs/rationale.md`, `docs/standards-alignment.md`, `templates/`, `examples/`, `.github/`, `scripts/verify_acs_repo.py`. | Non-normative guidance, illustrations, and repository-local verification tooling. |
 
 ### 1.11 Acknowledgments
 
@@ -252,6 +252,9 @@ agent-contracts-standard/
       ci.yml
     ISSUE_TEMPLATE/
     pull_request_template.md
+
+  scripts/
+    verify_acs_repo.py
 
   .ai/
     index.md

@@ -8,6 +8,16 @@ Thank you for helping improve the Agent Contracts Standard (ACS) and this refere
 - Normative rules live in [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) **§1**; **§2** and `docs/` are informative unless they duplicate §1.
 - External alignment (BCP 14, AGENTS.md, MCP, Agent Skills) is listed in spec **§1.9**; do not contradict those references without a deliberate version bump.
 
+## Verification (strict)
+
+From the repository root, with Python 3.9+:
+
+```bash
+python3 scripts/verify_acs_repo.py
+```
+
+This checks required paths, `.ai/` category counts, Agent Skills `name` == directory, and `.ai/index.md` §1.7 heading order. CI runs the same script on every push and pull request to `main`.
+
 ## How to contribute
 
 1. **Open an issue** (or discuss in an existing one) for substantive spec changes so maintainers can agree on direction.

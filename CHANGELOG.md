@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 for the **standard document** version (see [spec/ACS-v0.1.md](spec/ACS-v0.1.md) §2.5).
 
+## [0.1.6] - 2026-05-01
+
+### Added
+
+- **Strict dogfood `.ai/` contract:** five instructions, four policies, five Agent Skills (`acs-normative-edit`, `acs-sync-templates-examples`, `acs-compliance-audit`, `acs-agents-md-review`, `acs-skill-edits`), four commands, and expanded context (`compliance-checklist.md`, `maintainer-contract-matrix.md`).
+- [`scripts/verify_acs_repo.py`](scripts/verify_acs_repo.py): automated checks for required files, minimum contract counts, skill `name` vs directory, and `.ai/index.md` §1.7 section order.
+- CI runs the Python verifier (replaces duplicate inline file list).
+
+### Changed
+
+- Root [`AGENTS.md`](AGENTS.md) and [`.ai/index.md`](.ai/index.md) updated for full discoverability and maintainer workflows.
+- [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) §2.1 diagram includes `scripts/verify_acs_repo.py`.
+
 ## [0.1.5] - 2026-05-01
 
 ### Added
