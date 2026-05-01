@@ -25,7 +25,9 @@ REQUIRED_FILES = [
     ".ai/instructions/normative-vs-informative.md",
     ".ai/instructions/normative-references-maintenance.md",
     ".ai/instructions/templates-examples-parity.md",
+    ".ai/instructions/spec-change-gate.md",
     ".ai/policies/spec-integrity.md",
+    ".ai/policies/spec-file-human-authorization.md",
     ".ai/policies/discoverability-from-agents.md",
     ".ai/policies/vendor-neutrality-contracts.md",
     ".ai/policies/changelog-for-normative-changes.md",
@@ -47,8 +49,8 @@ REQUIRED_FILES = [
     "examples/full/.ai/skills/write-tests/SKILL.md",
 ]
 
-MIN_INSTRUCTIONS = 5
-MIN_POLICIES = 4
+MIN_INSTRUCTIONS = 6
+MIN_POLICIES = 5
 MIN_SKILLS = 5
 MIN_COMMANDS = 4
 MIN_CONTEXT_FILES = 3

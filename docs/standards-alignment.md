@@ -1,6 +1,6 @@
 # Standards alignment (non-normative)
 
-How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially §1.2, §1.9–§1.11).
+How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially §1.2, §1.9, §1.10 Acknowledgments). This repository additionally binds agents via [`.ai/policies/spec-file-human-authorization.md`](../.ai/policies/spec-file-human-authorization.md) (not part of the ACS standard).
 
 ## AGENTS.md (entry contract)
 

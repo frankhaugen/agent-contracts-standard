@@ -11,11 +11,13 @@ Contract for the **agent-contracts-standard** repository. Section order follows 
 | [normative-vs-informative.md](instructions/normative-vs-informative.md) | §1 vs §2 / docs / README boundaries |
 | [normative-references-maintenance.md](instructions/normative-references-maintenance.md) | §1.9 reference table hygiene |
 | [templates-examples-parity.md](instructions/templates-examples-parity.md) | Keep templates & examples aligned with §1 |
+| [spec-change-gate.md](instructions/spec-change-gate.md) | Gate before editing `spec/ACS-v0.1.md` |
 
 ## Policies
 
 | File | Purpose |
 |------|---------|
+| [spec-file-human-authorization.md](policies/spec-file-human-authorization.md) | **No** `spec/` edits without explicit human maintainer instruction |
 | [spec-integrity.md](policies/spec-integrity.md) | No silent §1 contradictions; single root entry |
 | [discoverability-from-agents.md](policies/discoverability-from-agents.md) | All `.ai/` reachable from `AGENTS.md`; index updates |
 | [vendor-neutrality-contracts.md](policies/vendor-neutrality-contracts.md) | Templates/examples stay vendor-neutral for ACS claims |

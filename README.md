@@ -13,6 +13,7 @@ This repository publishes **ACS v0.1**: a small, vendor-neutral layout for agent
 - [Contributing](CONTRIBUTING.md) — branches, PRs, normative vs non-normative changes
 - [Security policy](SECURITY.md) — report vulnerabilities privately
 - [Code of conduct](CODE_OF_CONDUCT.md)
+- [`CODEOWNERS`](CODEOWNERS) — pull requests under `spec/` request review from the spec owner
 
 ## What ACS defines
 

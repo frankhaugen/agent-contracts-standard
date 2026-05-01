@@ -2,6 +2,10 @@
 
 Thank you for helping improve the Agent Contracts Standard (ACS) and this reference repository.
 
+## Critical: edits to `spec/ACS-v0.1.md`
+
+**Humans and agents:** Do **not** modify [`spec/ACS-v0.1.md`](spec/ACS-v0.1.md) without **explicit written maintainer instruction** (GitHub issue or PR from a maintainer). “Best practices,” drive-by improvements, or autonomous agent refactors to the spec are **not** allowed. See [`.ai/policies/spec-file-human-authorization.md`](.ai/policies/spec-file-human-authorization.md).
+
 ## Before you start
 
 - Read [AGENTS.md](AGENTS.md) and [`.ai/index.md`](.ai/index.md) if you are changing normative text, templates, or examples.

@@ -38,6 +38,7 @@ Then use **skills** for packaged workflows (normative edit, template sync, audit
 
 ## Rules
 
+- **Never** edit `spec/ACS-v0.1.md` without **explicit human maintainer instruction** recorded in an issue or PR — see [`.ai/policies/spec-file-human-authorization.md`](.ai/policies/spec-file-human-authorization.md).
 - Follow **instructions** before changing **§1** normative text; enforce **policies** at all times.
 - Activate the **skill** that matches the task (see `.ai/index.md` § Skills).
 - Use **commands** for structured maintainer workflows (verify layout, audit compliance, version bump, PR normative review).

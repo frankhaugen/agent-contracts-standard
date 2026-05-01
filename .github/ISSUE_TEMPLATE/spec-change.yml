@@ -7,6 +7,13 @@ body:
     attributes:
       value: "Normative text lives in spec/ACS-v0.1.md (section 1 and normative references in section 1.9)."
   - type: textarea
+    id: maintainer
+    attributes:
+      label: Maintainer authorization
+      description: Link or paste explicit written maintainer approval to edit spec/ACS-v0.1.md (required before any PR).
+    validations:
+      required: true
+  - type: textarea
     id: summary
     attributes:
       label: Summary

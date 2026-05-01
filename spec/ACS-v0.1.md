@@ -219,13 +219,7 @@ The following references are **normative**: they are incorporated into ACS by ci
 | **MCP-SPEC** | *Model Context Protocol* specification, [https://modelcontextprotocol.io/](https://modelcontextprotocol.io/) (specification index and linked normative text). | Tools and protocol semantics ACS **MUST** align with (§1.2). |
 | **AGENT-SKILLS** | *Agent Skills — Specification*, Agent Skills open standard, [https://agentskills.io/specification](https://agentskills.io/specification). | Skill packages under `.ai/skills/` **MUST** conform (§1.2, §1.6). |
 
-### 1.10 Informative references
-
-| ID | Reference | Notes |
-|----|-----------|--------|
-| **ACS-REPO** | *agent-contracts-standard* repository: `README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `docs/rationale.md`, `docs/standards-alignment.md`, `templates/`, `examples/`, `.github/`, `scripts/verify_acs_repo.py`. | Non-normative guidance, illustrations, and repository-local verification tooling. |
-
-### 1.11 Acknowledgments
+### 1.10 Acknowledgments
 
 ACS adopts **requirement notation** from the IETF through **[BCP14]** without restating RFC 2119 prose in full. The **AGENTS.md** name and practice are a **community convention** documented at **[AGENTS-MD]** (stewardship and history are described on that site). **Agent Skills** packaging rules are due to the **Agent Skills** open standard and community ([**AGENT-SKILLS**]). **MCP** is defined by the Model Context Protocol project ([**MCP-SPEC**]). ACS is independent work that **profiles** those specifications to a single repository layout; it does not speak for the cited organizations.
 
@@ -237,38 +231,9 @@ ACS adopts **requirement notation** from the IETF through **[BCP14]** without re
 
 ```text
 agent-contracts-standard/
-  AGENTS.md
   README.md
   LICENSE
   CHANGELOG.md
-  CONTRIBUTING.md
-  SECURITY.md
-  CODE_OF_CONDUCT.md
-  .editorconfig
-  .gitattributes
-
-  .github/
-    workflows/
-      ci.yml
-    ISSUE_TEMPLATE/
-    pull_request_template.md
-
-  scripts/
-    verify_acs_repo.py
-
-  .ai/
-    index.md
-    instructions/
-      maintaining-the-spec.md
-    skills/
-      acs-skill-edits/
-        SKILL.md
-    commands/
-      verify-layout.md
-    policies/
-      spec-integrity.md
-    context/
-      mcp-tool-contract.json
 
   spec/
     ACS-v0.1.md

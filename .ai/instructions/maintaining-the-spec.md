@@ -4,6 +4,8 @@
 
 This repository is the **reference publication** for ACS v0.1. Treat **§1** of `spec/ACS-v0.1.md` as law for the standard; treat **§2** as illustrative layout that **must** stay consistent with §1 unless explicitly labeled otherwise.
 
+**Hard gate:** Do **not** edit `spec/ACS-v0.1.md` without human maintainer authorization. Read [spec-file-human-authorization.md](../policies/spec-file-human-authorization.md) and [spec-change-gate.md](spec-change-gate.md) first.
+
 ## Normative (§1) work
 
 - Prefer **small, reviewable** edits; one conceptual change per commit when possible.

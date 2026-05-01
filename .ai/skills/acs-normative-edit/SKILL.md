@@ -8,6 +8,8 @@ license: MIT
 
 ## Preconditions
 
+0. **Authorization:** A human maintainer has given **explicit written instruction** to change `spec/ACS-v0.1.md` (issue or PR). If missing, **stop** — see [spec-file-human-authorization.md](../../policies/spec-file-human-authorization.md).
+
 Read [bcp14-requirement-keywords.md](../../instructions/bcp14-requirement-keywords.md) and [normative-vs-informative.md](../../instructions/normative-vs-informative.md).
 
 ## Steps
