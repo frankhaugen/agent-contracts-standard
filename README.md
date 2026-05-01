@@ -22,7 +22,7 @@ A repository is **ACS v0.1 compliant** if:
 - Behavior does not depend on vendor-specific agent files.
 - Everything is discoverable starting from `AGENTS.md`.
 
-Full checklist: [spec/ACS-v0.1.md §1.8](spec/ACS-v0.1.md#18-compliance).
+Compliance checklist: [§1.8](spec/ACS-v0.1.md#18-compliance). **Normative references** (BCP 14, AGENTS.md, MCP, Agent Skills): [§1.9](spec/ACS-v0.1.md#19-normative-references).
 
 ## Using this repo
 

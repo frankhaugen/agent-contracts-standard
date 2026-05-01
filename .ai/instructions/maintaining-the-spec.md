@@ -2,6 +2,6 @@
 
 **ACS type:** Instruction
 
-- **§1 (normative):** Changes here affect what “ACS compliant” means. Prefer small, reviewable edits; keep MUST/SHOULD language precise.
+- **§1 (normative):** Changes here affect what “ACS compliant” means. Prefer small, reviewable edits; keep **bold** requirement keywords consistent with [BCP 14](https://www.rfc-editor.org/info/bcp14) (see `spec/ACS-v0.1.md` §1.0 and §1.9).
 - **§2 (non-normative):** Templates and examples should reflect §1; update diagrams and paths together when layout rules change.
-- **External alignment:** When editing skills, follow [Agent Skills](https://agentskills.io/specification) (`SKILL.md`, `name` matches directory). When editing entry docs, follow [AGENTS.md](https://agents.md/) (agent-focused Markdown, clear build/test/security sections where applicable).
+- **External alignment:** Cite normative sources by ID as in spec §1.9 (**AGENT-SKILLS**, **AGENTS-MD**, **MCP-SPEC**). When editing skills, conform to **AGENT-SKILLS**. When editing entry docs, follow **AGENTS-MD** (agent-focused Markdown, build/test/security sections where applicable).

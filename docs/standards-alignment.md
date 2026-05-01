@@ -1,6 +1,6 @@
 # Standards alignment (non-normative)
 
-How ACS v0.1 relates to other specifications. Authoritative requirements remain in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md).
+How ACS v0.1 relates to other specifications. Authoritative requirements, **normative references**, and **attribution** are in [spec/ACS-v0.1.md](../spec/ACS-v0.1.md) (especially §1.2, §1.9–§1.11).
 
 ## AGENTS.md (entry contract)
 
